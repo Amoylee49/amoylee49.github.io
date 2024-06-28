@@ -1,0 +1,3415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="温故而知新">
+<meta name="theme-color" content="#000">
+<title>关于 | October</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1719613271196">
+<link rel="stylesheet" href="/media/css/pisces.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      displayMath: [['$$', '$$'], ["\\[", "\\]"]]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'a', 'annotation', 'annotation-xml'],
+      ignoreHtmlClass: 'tex2jax_ignore|crayon-.*', // 'crayon-' 开头的类，属于Wordpress代码高亮库，这部分不需要处理，否则会导致显示不正确,这部分是正则式，多条之间用'|'分割
+      processHtmlClass: 'tex2jax_process'
+    },
+    //禁用右键菜单	
+    renderActions: {
+      addMenu: [0, '', '']
+    }
+  };
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+  <meta name="description" content="关于" />
+  <meta name="keywords" content="" />
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="pisces">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>October</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">业，精于勤，荒于夕</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> Document
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> Tag
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> About
+                </a>
+              
+            </li>
+          
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout pisces ">
+      <div class="section-layout-wrapper">
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active language" data-lan="index">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item language" data-lan="preview">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body pisces" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">Java Rookie</p>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">17</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">10</span>
+        <span class="site-item-stat-name language" data-lan="category">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">10</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+  
+  
+
+  
+
+
+
+</div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
+<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
+<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
+<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
+      }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0] && elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
+    });
+  }
+
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
+    }
+  }
+
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
+    }
+  }
+
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
+  }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
+
+</script>
+            </div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://amoylee49.github.io/post/about/">
+      关于
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span>2019-01-25</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>31<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+    
+    
+    <span id="/post/about/" data-flag-title="关于" class="meta-item pc-show leancloud_visitors">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
+    </span>
+    
+  </div>
+</header>
+            <div class="post-body next-md-body" id="post_body">
+              <blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<h2 id="关于本站">🏠 关于本站</h2>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<h2 id="联系我呀">📬 联系我呀</h2>
+
+            </div>
+            
+            
+            
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
+
+<style>
+  .v .veditor {
+    min-height: 10rem;
+    background-image: url('');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+  }
+
+  .v .vwrap {
+    border: 1px solid #000 !important;
+  }
+
+  .v .vbtn {
+    padding: .4rem 1.2rem !important;
+    border-color: #fff !important;
+    background-color: #49b1f5 !important;
+    color: #fff !important;
+    font-size: .7rem !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat {
+    padding: 0 .8rem !important;
+    border: 1px solid #00c4b6 !important;
+    border-radius: 5px !important;
+    color: #00c4b6 !important;
+  }
+</style>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'GynDhPX6eHS2Nq4tAKoGEidO-gzGzoHsz',
+    appKey: 'ZERsquyMkJCqIYx2g0z9oiwV',
+    avatar: '',
+    placeholder: '',
+    pageSize: '',
+    lang: 'zh-cn',
+    enableQQ: 'true' === 'true',
+    visitor: 'true' === 'true',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'true',
+  });
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a
+        href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      
+    </div>
+  </footer>
+  
+  
+  <div class="pisces back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+<link rel="stylesheet" href="/media/live2d/css/live2d.css" />
+<div class="box-scale">
+  <div id="landlord" style="left: 5px;bottom: px;"
+    data-key="">
+    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
+    
+
+      <div class="message" style="opacity:0"></div>
+      <div class="live_talk_input_body">
+        <div class="live_talk_input_name_body">
+          <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off"
+            placeholder="你的名字" />
+        </div>
+        <div class="live_talk_input_text_body">
+          <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off"
+            placeholder="要和我聊什么呀？" />
+          <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+        </div>
+      </div>
+      <input name="live_talk" id="live_talk" value="1" type="hidden" />
+      <div class="live_ico_box">
+        <div class="live_ico_item type_info" id="showInfoBtn"></div>
+        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+        
+        <div class="live_ico_item type_youdu" id="youduButton"></div>
+        <div class="live_ico_item type_quit" id="hideButton"></div>
+        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
+        <input id="duType" value="douqilai" type="hidden">
+        
+      </div>
+    
+  </div>
+</div>
+<div id="open_live2d">召唤看板娘</div>
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+  var message_Path = 'https://cdn.jsdelivr.net/gh/hsxyhao/live2d.github.io@master/';
+  let landlord = document.querySelector('#landlord');
+  var apiKey = landlord.dataset.key;
+</script>
+<script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
+<script>
+	var home_Path = document.location.protocol + '//' + window.document.location.hostname + ":" + window.document.location.port + '/';
+	var userAgent = window.navigator.userAgent.toLowerCase();
+	var norunAI = ["android", "iphone", "ipod", "ipad", "windows phone", "mqqbrowser", "msie", "trident/7.0"];
+	var norunFlag = false;
+
+	for (var i = 0; i < norunAI.length; i++) {
+		if (userAgent.indexOf(norunAI[i]) > -1) {
+			norunFlag = true;
+			break;
+		}
+	}
+
+	if (!window.WebGLRenderingContext) {
+		norunFlag = true;
+	}
+
+	if (!norunFlag) {
+		var hitFlag = false;
+		var AIFadeFlag = false;
+		var liveTlakTimer = null;
+		var sleepTimer_ = null;
+		var AITalkFlag = false;
+		var talkNum = 0;
+		(function () {
+			function renderTip(template, context) {
+				var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g;
+				return template.replace(tokenReg, function (word, slash1, token, slash2) {
+					if (slash1 || slash2) {
+						return word.replace('\\', '');
+					}
+					var variables = token.replace(/\s/g, '').split('.');
+					var currentObject = context;
+					var i, length, variable;
+					for (i = 0, length = variables.length; i < length; ++i) {
+						variable = variables[i];
+						currentObject = currentObject[variable];
+						if (currentObject === undefined || currentObject === null) return '';
+					}
+					return currentObject;
+				});
+			}
+
+			String.prototype.renderTip = function (context) {
+				return renderTip(this, context);
+			};
+
+			var re = /x/;
+			re.toString = function () {
+				showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
+				return '';
+			};
+
+			$(document).on('copy', function () {
+				showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
+			});
+
+			function initTips() {
+				$.ajax({
+					cache: true,
+					url: message_Path + 'message.json',
+					dataType: "json",
+					success: function (result) {
+						$.each(result.mouseover, function (index, tips) {
+							$(tips.selector).mouseover(function () {
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+								talkValTimer();
+								clearInterval(liveTlakTimer);
+								liveTlakTimer = null;
+							});
+							$(tips.selector).mouseout(function () {
+								showHitokoto();
+								if (liveTlakTimer == null) {
+									liveTlakTimer = window.setInterval(function () {
+										showHitokoto();
+									}, 15000);
+								};
+							});
+						});
+						$.each(result.click, function (index, tips) {
+							$(tips.selector).click(function () {
+								if (hitFlag) {
+									return false
+								}
+								hitFlag = true;
+								setTimeout(function () {
+									hitFlag = false;
+								}, 8000);
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+							});
+							clearInterval(liveTlakTimer);
+							liveTlakTimer = null;
+							if (liveTlakTimer == null) {
+								liveTlakTimer = window.setInterval(function () {
+									showHitokoto();
+								}, 15000);
+							};
+						});
+					}
+				});
+			}
+			initTips();
+
+			var text;
+			if (document.referrer !== '') {
+				var referrer = document.createElement('a');
+				referrer.href = document.referrer;
+				text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
+				var domain = referrer.hostname.split('.')[1];
+				if (domain == 'baidu') {
+					text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'so') {
+					text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'google') {
+					text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			} else {
+				if (window.location.href == home_Path) { //主页URL判断，需要斜杠结尾
+					var now = (new Date()).getHours();
+					if (now > 23 || now <= 5) {
+						text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？';
+					} else if (now > 5 && now <= 7) {
+						text = '早上好！一日之计在于晨，美好的一天就要开始了！';
+					} else if (now > 7 && now <= 11) {
+						text = '上午好！工作顺利嘛，不要久坐，多起来走动走动哦！';
+					} else if (now > 11 && now <= 14) {
+						text = '中午了，工作了一个上午，现在是午餐时间！';
+					} else if (now > 14 && now <= 17) {
+						text = '午后很容易犯困呢，今天的运动目标完成了吗？';
+					} else if (now > 17 && now <= 19) {
+						text = '傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~';
+					} else if (now > 19 && now <= 21) {
+						text = '晚上好，今天过得怎么样？';
+					} else if (now > 21 && now <= 23) {
+						text = '已经这么晚了呀，早点休息吧，晚安~~';
+					} else {
+						text = '嗨~ 快来逗我玩吧！';
+					}
+				} else {
+					text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			}
+			showMessage(text, 12000);
+		})();
+
+		liveTlakTimer = setInterval(function () {
+			showHitokoto();
+		}, 15000);
+
+		function showHitokoto() {
+			if (sessionStorage.getItem("Sleepy") !== "1") {
+				if (!AITalkFlag) {
+					$.getJSON('https://v1.hitokoto.cn/', function (result) {
+						talkValTimer();
+						showMessage(result.hitokoto, 0);
+					});
+				}
+			} else {
+				hideMessage(0);
+				if (sleepTimer_ == null) {
+					sleepTimer_ = setInterval(function () {
+						checkSleep();
+					}, 200);
+				}
+			}
+		}
+
+		function checkSleep() {
+			var sleepStatu = sessionStorage.getItem("Sleepy");
+			if (sleepStatu !== '1') {
+				talkValTimer();
+				showMessage('你回来啦~', 0);
+				clearInterval(sleepTimer_);
+				sleepTimer_ = null;
+			}
+		}
+
+		function showMessage(text, timeout) {
+			if (Array.isArray(text)) text = text[Math.floor(Math.random() * text.length + 1) - 1];
+			$('.message').stop();
+			$('.message').html(text);
+			$('.message').fadeTo(200, 1);
+			//if (timeout === null) timeout = 5000;
+			//hideMessage(timeout);
+		}
+		function talkValTimer() {
+			$('#live_talk').val('1');
+		}
+
+		function hideMessage(timeout) {
+			//$('.message').stop().css('opacity',1);
+			if (timeout === null) timeout = 5000;
+			$('.message').delay(timeout).fadeTo(200, 0);
+		}
+
+		function initLive2d() {
+			$('#hideButton').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "0");
+					$('#landlord').fadeOut(200);
+					$('#open_live2d').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#open_live2d').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "1");
+					$('#open_live2d').fadeOut(200);
+					$('#landlord').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#youduButton').on('click', function () {
+				if ($('#youduButton').hasClass('doudong')) {
+					var typeIs = $('#youduButton').attr('data-type');
+					$('#youduButton').removeClass('doudong');
+					$('body').removeClass(typeIs);
+					$('#youduButton').attr('data-type', '');
+				} else {
+					var duType = $('#duType').val();
+					var duArr = duType.split(",");
+					var dataType = duArr[Math.floor(Math.random() * duArr.length)];
+
+					$('#youduButton').addClass('doudong');
+					$('#youduButton').attr('data-type', dataType);
+					$('body').addClass(dataType);
+				}
+			});
+			if (apiKey) {
+				$('#showInfoBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "0") {
+						return
+					} else {
+						$('#live_statu_val').val("0");
+						$('.live_talk_input_body').fadeOut(500);
+						AITalkFlag = false;
+						showHitokoto();
+						$('#showTalkBtn').show();
+						$('#showInfoBtn').hide();
+					}
+				});
+				$('#showTalkBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "1") {
+						return
+					} else {
+						$('#live_statu_val').val("1");
+						$('.live_talk_input_body').fadeIn(500);
+						AITalkFlag = true;
+						$('#showTalkBtn').hide();
+						$('#showInfoBtn').show();
+
+					}
+				});
+				$('#talk_send').on('click', function () {
+					var info_ = $('#AIuserText').val();
+					var userid_ = $('#AIuserName').val();
+					if (info_ == "") {
+						showMessage('写点什么吧！', 0);
+						return;
+					}
+					if (userid_ == "") {
+						showMessage('聊之前请告诉我你的名字吧！', 0);
+						return;
+					}
+					showMessage('思考中~', 0);
+					let protocol = window.location.protocol.indexOf("s") > 0 ? "https" : "http";
+					$.ajax({
+						type: "get",
+						url: `${protocol}://www.tuling123.com/openapi/api?key=${apiKey}&info=${info_}`,
+						dataType: "json",
+						success: function (res) {
+							talkValTimer();
+							showMessage(res.text, 0);
+							$('#AIuserText').val("");
+							sessionStorage.setItem("live2duser", userid_);
+						},
+						error: function (e) {
+							talkValTimer();
+							showMessage('似乎有什么错误，请和站长联系！', 0);
+						}
+					});
+				});
+			} else {
+				$('#showInfoBtn').hide();
+				$('#showTalkBtn').hide();
+			}
+			//获取音乐信息初始化
+			var bgmListInfo = $('input[name=live2dBGM]');
+			if (bgmListInfo.length == 0) {
+				$('#musicButton').hide();
+			} else {
+				var bgmPlayNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+				var bgmPlayTime = 0;
+				var live2dBGM_Num = sessionStorage.getItem("live2dBGM_Num");
+				var live2dBGM_PlayTime = sessionStorage.getItem("live2dBGM_PlayTime");
+				if (live2dBGM_Num) {
+					if (live2dBGM_Num <= $('input[name=live2dBGM]').length - 1) {
+						bgmPlayNow = parseInt(live2dBGM_Num);
+					}
+				}
+				if (live2dBGM_PlayTime) {
+					bgmPlayTime = parseInt(live2dBGM_PlayTime);
+				}
+				var live2dBGMSrc = bgmListInfo.eq(bgmPlayNow).val();
+				$('#live2d_bgm').attr('data-bgm', bgmPlayNow);
+				$('#live2d_bgm').attr('src', live2dBGMSrc);
+				$('#live2d_bgm')[0].currentTime = bgmPlayTime;
+				$('#live2d_bgm')[0].volume = 0.5;
+				var live2dBGM_IsPlay = sessionStorage.getItem("live2dBGM_IsPlay");
+				var live2dBGM_WindowClose = sessionStorage.getItem("live2dBGM_WindowClose");
+				if (live2dBGM_IsPlay == '0' && live2dBGM_WindowClose == '0') {
+					$('#live2d_bgm')[0].play();
+					$('#musicButton').addClass('play');
+				}
+				sessionStorage.setItem("live2dBGM_WindowClose", '1');
+				$('#musicButton').on('click', function () {
+					if ($('#musicButton').hasClass('play')) {
+						$('#live2d_bgm')[0].pause();
+						$('#musicButton').removeClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '1');
+					} else {
+						$('#live2d_bgm')[0].play();
+						$('#musicButton').addClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				});
+				window.onbeforeunload = function () {
+					sessionStorage.setItem("live2dBGM_WindowClose", '0');
+					if ($('#musicButton').hasClass('play')) {
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				}
+				document.getElementById('live2d_bgm').addEventListener("timeupdate", function () {
+					var live2dBgmPlayTimeNow = document.getElementById('live2d_bgm').currentTime;
+					sessionStorage.setItem("live2dBGM_PlayTime", live2dBgmPlayTimeNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("ended", function () {
+					var listNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+					listNow++;
+					if (listNow > $('input[name=live2dBGM]').length - 1) {
+						listNow = 0;
+					}
+					var listNewSrc = $('input[name=live2dBGM]').eq(listNow).val();
+					sessionStorage.setItem("live2dBGM_Num", listNow);
+					$('#live2d_bgm').attr('src', listNewSrc);
+					$('#live2d_bgm')[0].play();
+					$('#live2d_bgm').attr('data-bgm', listNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("error", function () {
+					$('#live2d_bgm')[0].pause();
+					$('#musicButton').removeClass('play');
+					showMessage('音乐似乎加载不出来了呢！', 0);
+				});
+			}
+			//获取用户名
+			var live2dUser = sessionStorage.getItem("live2duser");
+			if (live2dUser !== null) {
+				$('#AIuserName').val(live2dUser);
+			}
+			//获取位置
+			var landL = sessionStorage.getItem("historywidth");
+			var landB = sessionStorage.getItem("historyheight");
+			if (landL == null || landB == null) {
+				landL = '5px'
+				landB = '0px'
+			}
+			$('#landlord').css('left', landL + 'px');
+			$('#landlord').css('bottom', landB + 'px');
+			//移动
+			function getEvent() {
+				return window.event || arguments.callee.caller.arguments[0];
+			}
+			var smcc = document.getElementById("landlord");
+			var moveX = 0;
+			var moveY = 0;
+			var moveBottom = 0;
+			var moveLeft = 0;
+			var moveable = false;
+			var docMouseMoveEvent = document.onmousemove;
+			var docMouseUpEvent = document.onmouseup;
+			smcc.onmousedown = function () {
+				var ent = getEvent();
+				moveable = true;
+				moveX = ent.clientX;
+				moveY = ent.clientY;
+				var obj = smcc;
+				moveBottom = parseInt(obj.style.bottom);
+				moveLeft = parseInt(obj.style.left);
+				if (isFirefox = navigator.userAgent.indexOf("Firefox") > 0) {
+					window.getSelection().removeAllRanges();
+				}
+				document.onmousemove = function () {
+					if (moveable) {
+						var ent = getEvent();
+						var x = moveLeft + ent.clientX - moveX;
+						var y = moveBottom + (moveY - ent.clientY);
+						obj.style.left = x + "px";
+						obj.style.bottom = y + "px";
+					}
+				};
+				document.onmouseup = function () {
+					if (moveable) {
+						var historywidth = obj.style.left;
+						var historyheight = obj.style.bottom;
+						historywidth = historywidth.replace('px', '');
+						historyheight = historyheight.replace('px', '');
+						sessionStorage.setItem("historywidth", historywidth);
+						sessionStorage.setItem("historyheight", historyheight);
+						document.onmousemove = docMouseMoveEvent;
+						document.onmouseup = docMouseUpEvent;
+						moveable = false;
+						moveX = 0;
+						moveY = 0;
+						moveBottom = 0;
+						moveLeft = 0;
+					}
+				};
+			};
+		}
+		$(document).ready(function () {
+			var AIimgSrc = [];
+			let chooseLive2d = 'histoire'
+			if (chooseLive2d === 'histoire') {
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_00.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_01.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_02.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_03.png");
+			} else if (chooseLive2d === 'rem') {
+				AIimgSrc.push(message_Path + "model/rem/remu2048/texture_00.png");
+			} else if (chooseLive2d === 'aoba') {
+				AIimgSrc.push(message_Path + "model/aoba/textures/texture_00.png");
+			} else if (chooseLive2d === 'hijiki') {
+				AIimgSrc.push(message_Path + "model/hijiki/moc/hijiki.2048/texture_00.png");
+			} else if (chooseLive2d === 'tororo') {
+				AIimgSrc.push(message_Path + "model/tororo/moc/tororo.2048/texture_00.png");
+			}
+			var images = [];
+			var imgLength = AIimgSrc.length;
+			var loadingNum = 0;
+			for (var i = 0; i < imgLength; i++) {
+				images[i] = new Image();
+				images[i].src = AIimgSrc[i];
+				images[i].onload = function () {
+					loadingNum++;
+					if (loadingNum === imgLength) {
+						var live2dhidden = localStorage.getItem("live2dhidden");
+						if (live2dhidden === "0") {
+							setTimeout(function () {
+								$('#open_live2d').fadeIn(200);
+							}, 1300);
+						} else {
+							setTimeout(function () {
+								$('#landlord').fadeIn(200);
+							}, 1300);
+						}
+						let model = '';
+						if (chooseLive2d === 'histoire') {
+							model = message_Path + "model/histoire/model.json";
+						} else if (chooseLive2d === 'rem') {
+							model = message_Path + "model/rem/model.json";
+						} else if (chooseLive2d === 'aoba') {
+							model = message_Path + "model/aoba/model.json";
+						} else if (chooseLive2d === 'hijiki') {
+							model = message_Path + "model/hijiki/hijiki.model.json";
+						} else if (chooseLive2d === 'tororo') {
+							model = message_Path + "model/tororo/tororo.model.json";
+						}
+						setTimeout(function () {
+							loadlive2d("live2d", model);
+						}, 1000);
+						initLive2d();
+						images = null;
+					}
+				}
+			}
+		});
+	}
+</script>
+  
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+    back2TopText = document.querySelector('#back_to_top_text'),
+    drawerBox = document.querySelector('#drawer_box'),
+    rightSideBar = document.querySelector('.sidebar'),
+    viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener('scroll', function (e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+
+  let hasCacu = false;
+  window.onresize = function () {
+    calcuHeight();
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, transitionDir, {});
+          }
+        })
+        window.Velocity(viewport, openProp, {
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target", "_blank");
+      }
+    })
+  }
+
+  let faSearch = document.querySelector('#fa_search');
+  faSearch.addEventListener('click', function () {
+    document.querySelector('#search_mask').style = ''
+  })
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+  
+  // 离开当前页title变化
+  var leaveTitle = '';
+  if (leaveTitle) {
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState == 'hidden') {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+
+</script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
+</script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+          
+        </div>
+      </div>
+      <p class="reward-word">扫码打赏，你说多少就多少</p>
+      <p class="reward-tip">打开微信扫一扫，即可进行扫码打赏哦</p>
+    </div>
+    <div class="bottom">
+      
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
+
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
+
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        window.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        window.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        window.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        window.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      window.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
+  </div>
+</body>
+
+  <div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/xiaomi--migsk/"" data-c="
+          &lt;p&gt;rom 下载地址：xiaomirom.com&lt;/p&gt;
+&lt;h1 id=&#34;magisk安装&#34;&gt;magisk安装&lt;/h1&gt;
+&lt;!-- more --&gt;
+&lt;ol&gt;
+&lt;li&gt;确保手机已完成 BL 解锁。&lt;a href=&#34;http://www.miui.com/unlock/download.html&#34;&gt;&lt;code&gt;点击这里解锁&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;手机下载并且安装Magisk.apk !! &lt;a href=&#34;https://github.com/topjohnwu/Magisk/releases&#34;&gt;&lt;code&gt;地址&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;准备当前系统的boot…img文件（线刷包可以提取）&lt;/li&gt;
+&lt;li&gt;把提取的boot.img复制到手机，随便什么文件夹&lt;/li&gt;
+&lt;li&gt;打开Magisk App，点击&amp;quot;&lt;code&gt;安装&lt;/code&gt;&amp;quot;， “&lt;code&gt;选择并修复一个文件&lt;/code&gt;”，选取上一步复制到手机的boot.img文件，然后点击&amp;quot;开始&amp;quot;，会得到一个文件：magisk_patched-25200_HBHMD.img&lt;pre&gt;&lt;code&gt;     adb reboot  手机会正常重启
+     adb reboot recovery  手机会重启到recovery卡刷模式
+     adb reboot bootloader  手机会重启到bootloader（fastboot）线刷模式
+     adb reboot edl  手机会重启到9008刷机模式！仅限高通部分机型！慎用！
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;手机重启进入fastboot模式连接电脑，命令行输入(ARDC工具)&lt;pre&gt;&lt;code&gt;    #刷入 boot
+    fastboot flash boot magisk_patched-27000_oGXR2.img（magisk..img 放ARDC同目录）
+    ./fastboot flash boot magisk_patched-25200_HBHMD.img
+    #重启 
+    ./fastboot reboot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Magisk 安装完成。&lt;/p&gt;
+&lt;p&gt;原文链接：https://blog.csdn.net/qq_38202733/article/details/134347135&lt;/p&gt;
+&lt;h1 id=&#34;什么是lsposedxposed&#34;&gt;什么是LSPosed（xposed）&lt;/h1&gt;
+&lt;p&gt;LSPosed：https://github.com/LSPosed/LSPosed/releases&lt;br&gt;
+&lt;code&gt;推送文件到手机:&lt;/code&gt;&lt;br&gt;
+连接了多台设备，指定一台进行push，如果你只用usb或者使用了tcpip连接了一台设备可以直接adb push&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;adb -s 1f79e024 push ~/Downloads/LSPosed-v1.9.2-7024-zygisk-release.zip /sdcard/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;安装 LSPosed:&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1、首先确保，你的Magisk能够读取到版本。
+2、如果`Zygisk` 显示 否，需要在进入``设置``，``勾选``上 `Zygisk ... 在Zygote中运行Magisk` 
+3、然后在Magisk的`模块`中点击`从本地安装` 选择刚才推送进手机的LSPosed.zip文件然后确认安装。
+4、等待安装提示完成后根据提示重启手机。
+5、重启完成后进入Magisk进入模块界面，勾选上`Zygisk LSPosed`。然后你在桌面可能会发现找不到应用图标，``然后进入拨号界面输入`*#*#5776733#*#*` 就能打打开LSPosed。``
+6、然后进入LSPosed的设置，选择`创建快捷方式`。
+7、完成安装。
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;备份qcn基带&#34;&gt;备份QCN基带&lt;/h1&gt;
+&lt;p&gt;1、&lt;/p&gt;
+&lt;h1 id=&#34;绕过鲁班mtb鉴权&#34;&gt;绕过鲁班（MTB）鉴权&lt;/h1&gt;
+&lt;p&gt;界面命令 ：&lt;em&gt;#&lt;/em&gt;#663368378#&lt;em&gt;#&lt;/em&gt; ，选择 nv/efs配置 ，搜索550，选择bcd,选择卡1，点&lt;code&gt;读&lt;/code&gt;，显示的是卡1 imei，点删，弹出选择 选是，重启卡1 为0，&lt;/p&gt;
+&lt;p&gt;重复上面步骤，这次改卡二，点&lt;code&gt;读&lt;/code&gt;, 显示 卡2 imei，点&lt;code&gt;写&lt;/code&gt;  UE IMEI，改物联卡串号, 开机拨号 *#06#, 查看 imei&lt;br&gt;
+&lt;code&gt;注意：&lt;/code&gt;改串先拔除物联卡，&lt;code&gt;防止锁号&lt;/code&gt;,IMEI 1(靠外面)&lt;/p&gt;
+&lt;h3 id=&#34;米tool-flash工具qcn&#34;&gt;米tool flash工具(QCN)&lt;/h3&gt;
+&lt;p&gt;https://xiaomitools.com/&lt;/p&gt;
+&lt;h3 id=&#34;modempro-鲁班mtb工具&#34;&gt;modempro 鲁班(MTB)工具&lt;/h3&gt;
+&lt;p&gt;https://github.com/Xposed-Modules-Repo/com.weverses.modempro/releases/&lt;/p&gt;
+">小米rom 刷 migsk</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/mysql-web-ui-ke-hu-duan-docker/"" data-c="
+          &lt;!-- more --&gt;
+&lt;!-- more --&gt;
+&lt;h1 id=&#34;mysql-web-ui&#34;&gt;mysql web UI&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;docker pull rizo928/mywebsql-flex
+
+docker run -d -p 9000:80 \
+--network blog_network \
+--name mysql-UI  rizo928/mywebsql-flex
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;docker-容器想加入docker-子网络&#34;&gt;docker 容器想加入docker 子网络&lt;/h2&gt;
+&lt;p&gt;使用&lt;code&gt;docker network ls&lt;/code&gt;命令查看网络连接&lt;br&gt;
+docker inspect [容器ID]&lt;/p&gt;
+&lt;p&gt;docker network connect [network name] [container ID]&lt;/p&gt;
+&lt;h2 id=&#34;docker运行mysql84&#34;&gt;docker运行mysql:8.4&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;docker run -d -p 3306:3306 --network docker_blog_network \
+-e MYSQL_ROOT_PASSWORD=root --name=mysql8.4 \
+mysql:8.4.0 --default-authentication-plugin=caching_sha2_password
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;caching_sha2_password默认密码验证方式&lt;/p&gt;
+&lt;h1 id=&#34;更改mysql-密码默认验证方式&#34;&gt;更改mysql 密码默认验证方式&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;show plugins;
+SHOW VARIABLES LIKE &#39;default_authentication_plugin&#39;;
+select host,user,plugin from mysql.user;
+ALTER USER &#39;root&#39;@&#39;%&#39; IDENTIFIED WITH mysql_native_password BY &#39;root&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;来自 &lt;a href=&#34;https://www.cnblogs.com/atuotuo/p/9402132.html&#34;&gt;https://www.cnblogs.com/atuotuo/p/9402132.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;较新 webUI：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run -d -p 9900:8080 --network docker_blog_network \
+-e MYWEBSQL_ALLOW_CUSTOM_SERVERS=true \
+-e MYWEBSQL_SERVER_LIST=mysqli:【容器ID】 \
+--name mysql-UI  webhippie/mywebsql:latest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;来自 https://cloud.tencent.com/developer/article/2332400&lt;/p&gt;
+">mysql web UI 客户端（docker）</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/java-interview/"" data-c="
+          &lt;h1 id=&#34;java类加载过程&#34;&gt;Java类加载过程？&lt;/h1&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://amoylee49.github.io/post-images/1718681793146.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;描述一下jvm加载class文件的原理机制&#34;&gt;描述一下JVM加载class文件的原理机制?&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;装载： 查找和导入class文件；&lt;/li&gt;
+&lt;li&gt;连接：&lt;br&gt;
+① 检查:检查载入的class文件数据的正确性;&lt;br&gt;
+② 准备:为类的静态变量分配存储空间;&lt;br&gt;
+③ 解析:将符号引用转换成直接引用(这一步是可选的)&lt;/li&gt;
+&lt;li&gt;初始化： 静态变量，静态代码块。&lt;br&gt;
+这样的过程在程序调用类的静态成员的时候开始执行，所以静态方法main()才会成为一般程序的入口 方法。类的构造器也会引发该动作。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- more --&gt;
+&lt;h1 id=&#34;java内存分配是怎样的&#34;&gt;Java内存分配是怎样的？&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;寄存器:我们无法控制。&lt;/li&gt;
+&lt;li&gt;静态域: static定义的静态成员。&lt;/li&gt;
+&lt;li&gt;常量池:编译时被确定并保存在.class文件中的(final)常量值和和一些文本修饰的符号引用(类和接口的全限定名,字段的名称和描述符,方法和名称和描述符)。&lt;/li&gt;
+&lt;li&gt;堆内存:new创建的对象和数组,由Java虚拟机自动垃圾回收器管理,存取速度慢。&lt;/li&gt;
+&lt;li&gt;栈内存:基本类型的变量和对象的引用变量(堆内存空间的访问地址),速度快,可以共享,但是大小与生存期必须确定,缺乏灵活性。&lt;/li&gt;
+&lt;li&gt;非RAM存储:硬盘等永久存储空间(元空间？)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;jvm-内存区域&#34;&gt;JVM 内存区域&lt;/h1&gt;
+&lt;p&gt;主要分为&lt;code&gt;线程私有&lt;/code&gt;区域【程序计数器、虚拟机栈(stack)、native区】、&lt;br&gt;
+&lt;code&gt;线程共享区域&lt;/code&gt; 【JAVA 堆(heap)、方法区(永久代)】、直接内存。&lt;br&gt;
+&lt;img src=&#34;https://amoylee49.github.io/post-images/1718683459007.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;java-垃圾回收机制&#34;&gt;Java 垃圾回收机制&lt;/h1&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://amoylee49.github.io/post-images/1718684188581.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;gc-分代收集算法&#34;&gt;&lt;code&gt;GC&lt;/code&gt; 分代收集算法：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;新生代&lt;/code&gt;: 使用复制算法，因为新生代中的对象生命周期较短。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;老年代&lt;/code&gt;: 使用标记整理或标记清除算法，因为老年代中的对象生命周期较长，且数量较少。&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;新生代young-generation的回收算法以复制算法为主&#34;&gt;新生代（Young Generation）的回收算法（以复制算法为主）&lt;/h3&gt;
+每次垃圾收集都能发现大批对象已死, 只有少量存活. 因此选用复制算法, 只需要付出少量&lt;br&gt;
+存活对象的复制成本就可以完成收集.
+&lt;h3 id=&#34;老年代tenured-generation的回收算法以标记-清除-标记-整理为主&#34;&gt;老年代（Tenured Generation）的回收算法（以标记-清除、标记-整理为主）&lt;/h3&gt;
+因为对象存活率高、没有额外空间对它进行分配担保, 就必须采用“标记—清理”或“标&lt;br&gt;
+记—整理”算法来进行回收, 不必进行内存复制, 且直接腾出空闲内存.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;永久代permanet-generation的回收算法&#34;&gt;永久代（Permanet Generation）的回收算法&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;用于存放静态文件，如Java类、方法等。永久代对垃圾回收没有显著影响，
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;java垃圾回收器&#34;&gt;Java垃圾回收器:&lt;/h2&gt;
+&lt;h3 id=&#34;cmsconcurrent-mark-sweepmark-sweep-指的是标记-清除算法&#34;&gt;CMS(Concurrent Mark Sweep)，Mark Sweep 指的是标记 - 清除算法。&lt;/h3&gt;
+&lt;p&gt;CMS 收集器线程都可以与用户线程一起工作，不需要进行停顿。&lt;br&gt;
+&lt;code&gt;具有以下缺点:&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;吞吐量低&lt;/code&gt;: 低停顿时间是以牺牲吞吐量为代价的，导致 CPU 利用率不够高。&lt;br&gt;
+无法处理浮动垃圾，可能出现 Concurrent Mode Failure。浮动垃圾是指并发清除阶段由于用户线程继续运行而产生的垃圾，这部分垃圾只能到下一次 GC 时才能进行回收。由于&lt;code&gt;浮动垃圾&lt;/code&gt;的存在，因此需要预留出一部分内存，意味着 &lt;code&gt;CMS 收集不能像其它收集器那样等待老年代快满的时候再回收&lt;/code&gt;。如果预留的内存不够存放浮动垃圾，就会出现 Concurrent Mode Failure，这时虚拟机将临时启用 Serial Old 来替代 CMS。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;标记 - 清除&lt;/code&gt;算法导致的&lt;code&gt;空间碎片&lt;/code&gt;，往往出现老年代空间剩余，但无法找到足够大连续空间来分配当前对象，不得不提前触发一次 Full GC。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;g1-收集器&#34;&gt;G1 收集器:&lt;/h3&gt;
+&lt;p&gt;G1(Garbage-First)，它是一款面向服务端应用的垃圾收集器，在&lt;code&gt;多 CPU 和大内存&lt;/code&gt;的场景下有很好的性能。HotSpot 开发团队赋予它的使命是未来可以&lt;code&gt;替换掉&lt;/code&gt; CMS 收集器。&lt;br&gt;
+G1 把堆划分成多个大小相等的&lt;code&gt;独立区域(Region)&lt;/code&gt;，新生代和老年代不再物理隔离&lt;br&gt;
+&lt;img src=&#34;https://amoylee49.github.io/post-images/1718685276091.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;code&gt;G1具备如下特点&lt;/code&gt;:&lt;br&gt;
+空间整合: 整体来看是基于“标记 - 整理”算法实现的收集器，从局部(两个 Region 之间)上来看是基于“复制”算法实现的，这意味着&lt;code&gt;运行期间&lt;/code&gt;不会产生&lt;code&gt;内存空间碎片&lt;/code&gt;。&lt;br&gt;
+&lt;code&gt;可预测的停顿&lt;/code&gt;: 能让使用者明确指定在一个长度为 M 毫秒的时间片段内，消耗在 GC 上的时间不得超过 N 毫秒。&lt;/p&gt;
+&lt;h2 id=&#34;gc-对比-cms-和-g1-对比&#34;&gt;GC 对比 (CMS  和 G1 对比)&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;相较于CMS，G1有许多优点。除了可以指定最大停顿时间、分Region的内存布局和按收益动态确定回收集等创新设计外，从传统算法理论看，G1具有更多发展潜力。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt; 然而，G1并非全方位压倒CMS。&lt;/code&gt;&lt;br&gt;
+比如，&lt;code&gt;G1的内存占用&lt;/code&gt;(Footprint)和程序运行时的额外执行负载(Overload)都较CMS高。&lt;br&gt;
+G1和CMS都使用卡表处理跨代指针，但&lt;code&gt;G1&lt;/code&gt;的卡表实现更复杂，每个Region都必须有一份卡表，可能占用&lt;code&gt;(G1)堆容量的20%或更多&lt;/code&gt;&lt;br&gt;
+总体来说，哪款收集器更好，往往需要针对具体场景进行定量比较。&lt;code&gt;根据实践经验&lt;/code&gt;，&lt;code&gt;小内存&lt;/code&gt;应用上CMS可能表现更好，而&lt;code&gt;大内存应用&lt;/code&gt;上G1能发挥优势。这个优劣势的Java堆容量平衡点通常在&lt;code&gt;6GB至8GB之间&lt;/code&gt;，不过也需根据实际情况进行测试，以得出最合适的结论。&lt;/p&gt;
+&lt;h2 id=&#34;full-gc-的触发条件&#34;&gt;Full GC 的触发条件&lt;/h2&gt;
+&lt;p&gt;Major GC的触发条件：当老年代满时会触发MajorGC，通常至少经历过一次Minor GC，再紧接着进行Major GC。(只有CMS 有单独回收年老代的行为)&lt;br&gt;
+对于 Minor GC，其触发条件非常简单，当 &lt;code&gt;Eden 空间满时&lt;/code&gt;，就将触发一次 Minor GC。而 Full GC 则相对复杂，有以下条件:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;调用 System.gc() 虚拟机不一定真正去执行&lt;/li&gt;
+&lt;li&gt;老年代空间不足&lt;br&gt;
+老年代空间不足的常见场景为前文所讲的大对象直接进入老年代、长期存活的对象进入老年代等。&lt;/li&gt;
+&lt;li&gt;JDK 1.7 及以前的永久代空间不足（1.7之后元空间不足）&lt;br&gt;
+当系统中要加载的类、反射的类和调用的方法较多时，永久代可能会被占满，在未配置为采用 CMS GC 的情况下也会执行 Full GC。如果经过 Full GC 仍然回收不了，那么虚拟机会抛出 java.lang.OutOfMemoryError。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;https://zhuanlan.zhihu.com/p/658949296?utm_id=0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;如何判断一个对象是否存活或者gc对象的判定方法&#34;&gt;如何判断一个对象是否存活？（或者GC对象的判定方法）&lt;/h1&gt;
+&lt;p&gt;引用计数法 和&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可达性算法(引用链法)【GC Root】&lt;br&gt;
+该算法的思想是：从一个被称为 GC Roots 的对象开始向下搜索，如果一个对象到 GC Roots 没有任何引用链相连时，则说明此对象不可用。
+&lt;h1 id=&#34;java中会存在内存泄漏吗请简单描述&#34;&gt;Java中会存在内存泄漏吗，请简单描述。&lt;/h1&gt;
+OutOfMemory(堆溢出 循环new 大对象)。和栈溢出（递归方法调用，stack 深度过长）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;finalize方法什么时候被调用析构函数finalization的目的是什么java9-废弃了用try-with-resource-替代&#34;&gt;finalize()方法什么时候被调用？析构函数(finalization)的目的是什么？（Java9 废弃了，用try with resource 替代）&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt; 它最主要的用途是回收特殊渠道申请的内存。Java程序有垃圾回收器,所以一般情况下内存问题不用程序员操心。但有一种 JNI(Java Native Interface)调用non-java程序(C或C++), finalize()的工作就是回收这部分的内存。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;什么是分布式垃圾回收dgc它是如何工作的&#34;&gt;什么是分布式垃圾回收(DGC)?它是如何工作的?&lt;/h1&gt;
+&lt;p&gt;DGC叫做分布式垃圾回收。RMI使用DGC来做自动垃圾回收。因为RMI包含了跨虚拟机的远程对象的引用,垃圾回收是很困难的。DGC使用&lt;code&gt;引用计数算法&lt;/code&gt;来给远程对象提供自动内存管理。&lt;/p&gt;
+&lt;h1 id=&#34;什么是类加载器类加载器有哪些&#34;&gt;什么是类加载器，类加载器有哪些？&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Bootstrap ClassLoader(系统类加载器)&lt;/li&gt;
+&lt;li&gt;Extension ClassLoader(扩展类加载器)&lt;/li&gt;
+&lt;li&gt;Application ClassLoader(应用程序类加载器)&lt;/li&gt;
+&lt;li&gt;Customer ClassLoader(自定义加载器)&lt;/li&gt;
+&lt;/ul&gt;
+">Java面试题：</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/mysql-fanshi/"" data-c="
+          &lt;p&gt;第一范式(1NF)：属性不可分割，即每个属性都是不可分割的原子项。(实体的属性即表中的列)&lt;/p&gt;
+&lt;p&gt;第二范式(2NF)：满足第一范式；且不存在部分依赖，即非主属性必须完全依赖于主属性。(主属性即主键；完全依赖是针对于联合主键的情况，非主键列不能只依赖于主键的一部分)&lt;/p&gt;
+&lt;p&gt;第三范式(3NF)：满足第二范式；且不存在传递依赖，即非主属性不能与非主属性之间有依赖关系，非主属性必须直接依赖于主属性，不能间接依赖主属性。（A -&amp;gt; B, B -&amp;gt;C, A -&amp;gt; C）&lt;/p&gt;
+&lt;p&gt;适度的增加&lt;code&gt;冗余字段&lt;/code&gt;能够提升查询速度，简化操作，因为不用每次都使用联接查询，获取属性。但是使用冗余字段&lt;code&gt;违反了&lt;/code&gt;数据库第三范式的设计原则，需要根据业务设计冗余字段。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h1 id=&#34;1nf&#34;&gt;1NF&lt;/h1&gt;
+&lt;p&gt;属性不可再分，即表中的每个列都不可以再进行拆分。&lt;/p&gt;
+&lt;p&gt;如下学生信息表(student)：&lt;br&gt;
+id、name(姓名)、sex_code(性别代号)、sex_desc(性别描述)、contact(联系方式)&lt;br&gt;
+primary key(id)&lt;br&gt;
+&lt;img src=&#34;https://amoylee49.github.io/post-images/1718656200119.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+如果在查询学生表时经常用到学生的电话号，则应该将&lt;code&gt;联系方式(contact)&lt;/code&gt;这一列&lt;code&gt;分为&lt;/code&gt;电话号(phone)和地址(address)两列，这样才符合第一范式。&lt;/p&gt;
+&lt;h1 id=&#34;2nf&#34;&gt;2NF&lt;/h1&gt;
+&lt;p&gt;在满足&lt;code&gt;1NF的前提下&lt;/code&gt;，表中不存在部分依赖，&lt;code&gt;非主键列要完全依赖于&lt;/code&gt;主键。(主要是说在联合主键的情况下，非主键列不能只依赖于主键的一部分)&lt;/p&gt;
+&lt;p&gt;如下学生成绩表(score)：&lt;br&gt;
+stu_id(学生id)、kc_id(课程id)、score(分数)、kc_name(课程名)&lt;br&gt;
+primary key(stu_id, kc_id)&lt;br&gt;
+&lt;img src=&#34;https://amoylee49.github.io/post-images/1718656345766.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+表中主键为stu_id和kc_id组成的联合主键。满足1NF；非主键列score完全依赖于主键，stu_id和kc_id两个值才能决定score的值；&lt;code&gt;而kc_name只依赖于kc_id，&lt;/code&gt;与stu_id&lt;code&gt;没有&lt;/code&gt;依赖关系，它不完全依赖于主键，只依赖于主键的一部分，&lt;code&gt;不符合2NF&lt;/code&gt;,应将 kc_name 拆分出来，独立一个表&lt;/p&gt;
+&lt;h1 id=&#34;3nf&#34;&gt;3NF：&lt;/h1&gt;
+&lt;p&gt;在满足2NF的前提下，&lt;code&gt;不存在传递依赖&lt;/code&gt;。(A -&amp;gt; B, B -&amp;gt; C, A-&amp;gt;C)&lt;/p&gt;
+&lt;p&gt;如下学生信息表(student)：&lt;br&gt;
+primary key(id)&lt;br&gt;
+&lt;img src=&#34;https://amoylee49.github.io/post-images/1718657499894.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+表中&lt;code&gt;sex_desc依赖于sex_code&lt;/code&gt;，而sex_code依赖于id(主键)，从而推出sex_desc依赖于id(主键)；&lt;code&gt;sex_desc不直接依赖于主键&lt;/code&gt;，而是通过依赖于非主键列而依赖于主键，属于&lt;code&gt;传递依赖&lt;/code&gt;，不符合3NF。&lt;br&gt;
+什么样的表越容易符合3NF？&lt;br&gt;
+&lt;code&gt;非主键列&lt;/code&gt;越少的表。(1NF强调列不可再分；2NF和3NF强调非主属性列和主属性列之间的关系)&lt;/p&gt;
+&lt;p&gt;或者将学生表的主键设计为&lt;code&gt;primary key(id,name,sex_code,phone)&lt;/code&gt;，这样非主键列只有address，更容易符合3NF。&lt;/p&gt;
+">Mysql 三范式3</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/redis-fen-bu-shi-suo/"" data-c="
+          &lt;p&gt;set 命令实现：redis的 &lt;code&gt;set命令&lt;/code&gt;支持在获取锁的同时设置key的&lt;code&gt;过期&lt;/code&gt;时间 等同于（setnx+expire）&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;使用set命令加锁并设置锁过期时间：SET lockKey uniqueValue EX 3 NX&lt;br&gt;
+&lt;code&gt;lockKey&lt;/code&gt;：加锁的锁名；&lt;br&gt;
+&lt;code&gt;uniqueValue&lt;/code&gt;：能够唯一标示锁的随机字符串；&lt;br&gt;
+&lt;code&gt;NX&lt;/code&gt;：只有当 lockKey 对应的 key 值不存在的时候才能 SET 成功；&lt;br&gt;
+&lt;code&gt;EX&lt;/code&gt;：过期时间设置（秒为单位）EX 3 标示这个锁有一个 3 秒的自动过期时间。与 EX 对应的是 PX（毫秒为单位），这两个都是过期时间设置。&lt;br&gt;
+不过，这种解决办法&lt;code&gt;同样存在漏洞&lt;/code&gt;：如果操作共享资源的时间&lt;code&gt;大于&lt;/code&gt;过期时间，就会出现锁提前过期的问题，进而导致分布式锁直接失效。如果锁的超时时间设置过长，又会影响到性能。&lt;br&gt;
+为了解决这个问题，我们可以让获得锁的线程开启一个守护线程，用来给快要过期的&lt;code&gt;锁“续期”&lt;/code&gt;。在JAVA的Redisson包中有一个”看门狗”机制，已经帮我们实现了这个功能&lt;/p&gt;
+&lt;h2 id=&#34;redission看门狗分布式锁&#34;&gt;redission看门狗分布式锁&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;Redisson 中的分布式锁自带自动续期机制，使用起来非常简单，原理也比较简单，其提供了一个专门用来监控和续期锁的 Watch Dog（ 看门狗），如果操作共享资源的线程还未执行完成的话，Watch Dog 会不断地延长锁的过期时间，进而保证锁不会因为超时而被释放
+&lt;/code&gt;&lt;/pre&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://amoylee49.github.io/post-images/1718593876266.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code&gt;```
+    public String testLock() throws InterruptedException {
+        RLock lock = redissonClient.getLock(&amp;quot;it_lock&amp;quot;);
+        //尝试获取锁，tryLock 参数分别是：获取锁的最大等待时间，锁自动释放时间，时间单位
+        lock.tryLock(10, 30, TimeUnit.SECONDS);
+        boolean isLock = lock.tryLock(10, TimeUnit.SECONDS);
+        if (isLock) {
+            try {
+                //业务逻辑
+            } finally {
+                lock.unLock();
+            }
+        }
+        return &amp;quot;finish&amp;quot;;
+    }
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;指定&lt;/code&gt;锁超时时间，不会使用自动续期机制：&lt;br&gt;
+lock.tryLock(10,30, TimeUnit.SECONDS); //设置释放时间，不会续期操作&lt;/li&gt;
+&lt;li&gt;只有&lt;code&gt;未指定&lt;/code&gt;锁超时时间，才会使用到 Watch Dog 自动续期机制。&lt;br&gt;
+lock.tryLock(10, TimeUnit.SECONDS);&lt;br&gt;
+如果使用 Redis 来实现分布式锁的话，还是比较推荐直接基于 Redisson 来做的&lt;br&gt;
+&lt;img src=&#34;https://amoylee49.github.io/post-images/1718594701456.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+">Redis 分布式锁</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/redis/"" data-c="
+          &lt;h3 id=&#34;mysql-里有-2000w-数据redis-中只存-20w-的数据如何保证-redis-中的数据都是热点数据&#34;&gt;MySQL 里有 2000w 数据，redis 中只存 20w 的数据，如何保证 redis 中的数据都是热点数据&lt;/h3&gt;
+&lt;p&gt;Redis 内存数据集大小上升到一定大小的时候，就会施行6 种&lt;code&gt;数据淘汰策略&lt;/code&gt;(ttl, lru random)。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;redis-常见性能问题和解决方案&#34;&gt;Redis 常见性能问题和解决方案：&lt;/h2&gt;
+&lt;p&gt;1、Master 最好不要写内存快照(RDB)，如果 Master 写内存快照，save 命令调度 rdbSave&lt;br&gt;
+函数，会阻塞主线程的工作，当快照比较大时对性能影响是非常大的，会间断性&lt;br&gt;
+暂停服务&lt;br&gt;
+2、如果数据比较重要，某个 Slave 开启 AOF 备份数据，策略设置为每秒同步一次&lt;br&gt;
+3、为了主从复制的速度和连接的稳定性，Master 和 Slave 最好在同一个局域网&lt;br&gt;
+4、尽量避免在压力很大的主库上增加从&lt;br&gt;
+5、主从复制不要用图状结构，用单向链表结构更为稳定，即：Master &amp;lt;- Slave1&lt;br&gt;
+&amp;lt;- Slave2 &amp;lt;- Slave3…这样的结构方便解决&lt;code&gt;单点故障&lt;/code&gt;问题，实现 Slave 对 Master&lt;br&gt;
+的替换。如果 Master 挂了，可以立刻启用 Slave1 做 Master，其他不变。&lt;/p&gt;
+&lt;h2 id=&#34;redis-的同步机制了解么&#34;&gt;Redis 的同步机制了解么&lt;/h2&gt;
+&lt;p&gt;Redis 可以使用&lt;code&gt;主从同步，从从同步&lt;/code&gt;。第一次同步时，主节点做一次 bgsave，&lt;br&gt;
+并同时将后续修改操作记录到内存 buffer，待完成后将 rdb 文件全量同步到复制&lt;br&gt;
+节点，复制节点接受完成后将 rdb 镜像加载到内存。加载完成后，再通知主节点&lt;br&gt;
+将期间修改的操作记录同步到复制节点进行重放就完成了同步过程。&lt;/p&gt;
+&lt;h2 id=&#34;redis-哈希槽的概念&#34;&gt;Redis 哈希槽的概念&lt;/h2&gt;
+&lt;p&gt;Redis 集群没有使用一致性 hash,而是&lt;code&gt;引入了哈希槽&lt;/code&gt;的概念，Redis 集群有&lt;br&gt;
+16384&lt;code&gt; (集群最大节点个数)&lt;/code&gt;个哈希槽，每个 key 通过 CRC16 校验后对 16384 取模来决定放置哪个槽，&lt;br&gt;
+集群的每个&lt;code&gt;节点&lt;/code&gt;负责一部分 hash 槽。&lt;/p&gt;
+&lt;h2 id=&#34;redis-过期键的删除策略&#34;&gt;redis 过期键的删除策略&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1、&lt;code&gt;定时删除&lt;/code&gt;:在设置键的过期时间的同时，创建一个定时器 timer). 让定时器在键&lt;br&gt;
+的过期时间来临时，立即执行对键的删除操作。&lt;/li&gt;
+&lt;li&gt;2、&lt;code&gt;惰性删除&lt;/code&gt;:放任键过期不管，但是每次从键空间中获取键时，都检查取得的键是&lt;br&gt;
+否过期，如果过期的话，就删除该键;如果没有过期，就返回该键。&lt;/li&gt;
+&lt;li&gt;3、&lt;code&gt;定期删除&lt;/code&gt;:每隔一段时间程序就对数据库进行一次检查，删除里面的过期键。至&lt;br&gt;
+于要删除多少过期键，以及要检查多少个数据库，则由算法决定。&lt;/li&gt;
+&lt;/ul&gt;
+">Redis</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/redis-xian-cheng-mo-xing/"" data-c="
+          &lt;h1 id=&#34;60-之前的单线程模式&#34;&gt;6.0 &lt;code&gt;之前&lt;/code&gt;的单线程模式&lt;/h1&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://amoylee49.github.io/post-images/1718588407211.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;!-- more --&gt;
+&lt;pre&gt;&lt;code&gt;6.0之前，Redis所谓的``单线程``并不是所有工作都是只有一个线程在执行，而是指Redis的``网络IO和读写``是由一个线程来完成的。其他``诸如``持久化、异步删除、集群数据同步等，其实是由额外的线程执行的。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;redis-60-多线程模型&#34;&gt;Redis 6.0 多线程模型&lt;/h1&gt;
+&lt;p&gt;多线程主要解决什么问题：&lt;br&gt;
+近年来底层网络硬件性能越来越好，Redis 的性能瓶颈逐渐体现在&lt;code&gt;网络 I/O 的读写上&lt;/code&gt;，单个线程处理网络 I/O 读写的速度跟不上底层网络硬件执行的速度。&lt;br&gt;
+总结起来，redis支持多线程就是以下两个原因：&lt;br&gt;
+可以充分利用服务器&lt;code&gt;CPU的多核&lt;/code&gt;资源，而主线程明显只能利用一个&lt;br&gt;
+多线程任务可以&lt;code&gt;分摊&lt;/code&gt; Redis 同步 IO 读写负荷，降低耗时&lt;br&gt;
+6.0版本优化之后，主线程和多线程网络IO的执行流程如下:&lt;br&gt;
+&lt;img src=&#34;https://amoylee49.github.io/post-images/1718588909714.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+具体步骤如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;主线程建立连接，并接受数据，并将获取的 socket 数据放入等待队列；&lt;/li&gt;
+&lt;li&gt;通过轮询的方式将 socket读取出来并分配给 IO 线程；&lt;/li&gt;
+&lt;li&gt;之后主线程保持阻塞，一直等到 IO 线程完成 socket 读取和解析；&lt;/li&gt;
+&lt;li&gt;I/O 线程读取和解析完成之后，返回给主线程 ，主线程开始执行 Redis 命令；&lt;/li&gt;
+&lt;li&gt;执行完Redis命令后，主线程阻塞，直到IO 线程完成 结果回写到socket 的工作；&lt;/li&gt;
+&lt;li&gt;主线程清空已完成的队列，等待客户端新的请求。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本质上是将主线程 IO 读写的这个操作 独立出来，单独交给一个I/O线程组处理。&lt;br&gt;
+这样多个 socket 读写可以并行执行，整体效率也就提高了。同时注意 Redis 命令还是主线程串行执行。&lt;/p&gt;
+&lt;h1 id=&#34;在-redis-60-中如何开启多线程&#34;&gt;在 Redis 6.0 中如何开启多线程？&lt;/h1&gt;
+&lt;p&gt;在了解了 Redis 6.0 中的多线程机制之后，我们要如何开启多线程呢？在 Redis 6.0 中，多线程机制默认是关闭的，如果想启动的话，需要修改 redis.conf 中的两个配置。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;设置 io-thread-do-reads 配置项为 yes，表示启用多线程。&lt;br&gt;
+&lt;code&gt;io-thread-do-reads yes&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过 io-threads 设置子线程的数量。&lt;br&gt;
+&lt;code&gt;io-threads 3&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;表示开启 3 个子线程，但是注意，线程数要小于机器的 CPU 核数，线程数并不是越大越好。关于线程数的设置，&lt;code&gt;官方的建议&lt;/code&gt;是如果为 4 核的 CPU，那么设置子线程数为 2 或 3；如果为 8 核的CPU，那么设置子线程数为 6。&lt;br&gt;
+如果你在实际应用中，发现 Redis 实例的 CPU 开销不大，吞吐量却没有提升，可以考虑使用 Redis 6.0 的多线程机制，加速 IO 读写处理，进而提升实例的吞吐量。&lt;/p&gt;
+&lt;p&gt;最后关于 Redis 的性能，Redis 的作者在 2019 的 RedisConf 大会上提到，Redis6.0 引入的多线程 I/O 特性对性能的&lt;code&gt;提升至少是一倍&lt;/code&gt;以上。国内也有人在阿里云使用 4 个线程的 Redis 版本和单线程的 Redis 版本进行比较测试，发现测试的结果和 Redis 作者说的一致，性能基本可以提高一倍。&lt;/p&gt;
+&lt;p&gt;原文链接：https://blog.csdn.net/smart_an/article/details/138204396&lt;/p&gt;
+">Redis 线程模型</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/mybatis-dong-tai-biao-qian/"" data-c="
+          &lt;pre&gt;&lt;code&gt;```
+&amp;lt;select id=&amp;quot;findUserByCondition&amp;quot; parameterType=&amp;quot;user&amp;quot; resultMap=&amp;quot;resMap&amp;quot;&amp;gt;
+        select * from user where 1=1
+        &amp;lt;if test=&amp;quot;name!=null and name!=&#39;&#39;&amp;quot;&amp;gt;
+            and name=#{name}
+        &amp;lt;/if&amp;gt;
+
+        &amp;lt;if test=&amp;quot;address !=null and address !=&#39;&#39;&amp;quot;&amp;gt;
+            and address=#{address}
+        &amp;lt;/if&amp;gt;
+
+        &amp;lt;if test=&amp;quot;sex!=null and sex!=&#39;&#39;&amp;quot;&amp;gt;
+            and sex=#{sex}
+        &amp;lt;/if&amp;gt;
+&amp;lt;/select&amp;gt;
+``` 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;注意- 这里用到&lt;code&gt;where 1=1&lt;/code&gt;来防止语法错误&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;也可以用 &lt;code&gt;&amp;lt;where&amp;gt;&lt;/code&gt; 标签 动态地将if标签中的&lt;code&gt;第一个and语句&lt;/code&gt;删除&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;select id=&amp;quot;findUserByCondition&amp;quot; parameterType=&amp;quot;user&amp;quot; resultMap=&amp;quot;resMap&amp;quot;&amp;gt;
+        select * from user 
+        &amp;lt;where&amp;gt;
+            &amp;lt;if test=&amp;quot;name!=null and name!=&#39;&#39;&amp;quot;&amp;gt;
+                and name=#{name}
+            &amp;lt;/if&amp;gt;
+
+            &amp;lt;if test=&amp;quot;address !=null and address !=&#39;&#39;&amp;quot;&amp;gt;
+                and address=#{address}
+            &amp;lt;/if&amp;gt;
+
+            &amp;lt;if test=&amp;quot;sex!=null and sex!=&#39;&#39;&amp;quot;&amp;gt;
+                and sex=#{sex}
+            &amp;lt;/if&amp;gt;
+        &amp;lt;/where&amp;gt;
+&amp;lt;/select&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;choose-when-otherwise&#34;&gt;choose when otherwise&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;在使用if标签时，只要test属性中的表达式为true，就会执行元素中的条件语句，但是在实际情况下有时只需要从多个选项中选择一个去执行，比如下面的场景：当查询数据库t_customer时，
+
+客户姓名不为空，则只根据客户名称进行客户筛选，
+当客户名称为null的时候，可客户职业不为空，则根据客户职业进行筛选，
+当客户名称和客户职业都为空的时候，要求查询电话不为空的客户
+```
+findCustomerByCondition(Customer customer);
+select id=&amp;quot;findCustomerByCondition&amp;quot; paramaterType=custom resultType=customer
+select * from t_customer where 1=1
+&amp;lt;choose&amp;gt;
+    &amp;lt;when test=&amp;quot;username!=null and username!=&amp;quot;&amp;quot;&amp;gt;
+    and username like concat(&#39;%&#39; #{username},&#39;%&#39;)
+    &amp;lt;/when&amp;gt;
+    &amp;lt;when test=&amp;quot;job!=null and job!=&amp;quot;&amp;quot;&amp;gt;
+    and job =#{jobs}
+    &amp;lt;/when&amp;gt;
+    &amp;lt;otherwise&amp;gt;
+        and phone is not null
+    &amp;lt;/otherwise&amp;gt;
+&amp;lt;/choose&amp;gt;
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;set&gt;标签&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;update id=&amp;quot;updateUserByCondition&amp;quot; parameterType=&amp;quot;user&amp;quot;&amp;gt;
+        update user
+        &amp;lt;set&amp;gt;
+            &amp;lt;if test=&amp;quot;name!=null and name!=&#39;&#39;&amp;quot;&amp;gt;
+                name=#{name},
+            &amp;lt;/if&amp;gt;
+
+            &amp;lt;if test=&amp;quot;address !=null and address !=&#39;&#39;&amp;quot;&amp;gt;
+                address=#{address},
+            &amp;lt;/if&amp;gt;
+
+            &amp;lt;if test=&amp;quot;sex!=null and sex!=&#39;&#39;&amp;quot;&amp;gt;
+               sex=#{sex},
+            &amp;lt;/if&amp;gt;
+        &amp;lt;/set&amp;gt;
+        where id=#{id}
+&amp;lt;/update&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;动态新增最复杂&#34;&gt;动态新增（最复杂)&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;sql id=&amp;quot;key&amp;quot;&amp;gt;
+    &amp;lt;trim suffixOverrides=&amp;quot;,&amp;quot;&amp;gt;
+        &amp;lt;if test=&amp;quot;name!=null and name!=&#39;&#39;&amp;quot;&amp;gt;
+            username,
+        &amp;lt;/if&amp;gt;
+
+        &amp;lt;if test=&amp;quot;address !=null and address !=&#39;&#39;&amp;quot;&amp;gt;
+            address,
+        &amp;lt;/if&amp;gt;
+
+        &amp;lt;if test=&amp;quot;sex!=null and sex!=&#39;&#39;&amp;quot;&amp;gt;
+            sex,
+        &amp;lt;/if&amp;gt;
+    &amp;lt;/trim&amp;gt;
+&amp;lt;/sql&amp;gt;
+
+&amp;lt;sql id=&amp;quot;val&amp;quot;&amp;gt;
+    &amp;lt;trim suffixOverrides=&amp;quot;,&amp;quot;&amp;gt;
+        &amp;lt;if test=&amp;quot;name!=null and name!=&#39;&#39;&amp;quot;&amp;gt;
+            #{name},
+        &amp;lt;/if&amp;gt;
+
+        &amp;lt;if test=&amp;quot;address !=null and address !=&#39;&#39;&amp;quot;&amp;gt;
+            #{address},
+
+        &amp;lt;/if&amp;gt;
+
+        &amp;lt;if test=&amp;quot;sex!=null and sex!=&#39;&#39;&amp;quot;&amp;gt;
+            #{sex},
+        &amp;lt;/if&amp;gt;
+    &amp;lt;/trim&amp;gt;
+&amp;lt;/sql&amp;gt;
+
+&amp;lt;insert id=&amp;quot;addUserByCondition&amp;quot; parameterType=&amp;quot;user&amp;quot;&amp;gt;
+    insert into user(&amp;lt;include refid=&amp;quot;key&amp;quot;/&amp;gt;) values(&amp;lt;include refid=&amp;quot;val&amp;quot;/&amp;gt;)
+&amp;lt;/insert&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+">mybatis 动态标签</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/redis--hyperloglog/"" data-c="
+          &lt;p&gt;除了Redis的五种常见数据类型外&lt;code&gt;( string,list，set，zset， hash )&lt;/code&gt;，Redis提供了HyperLogLog结构。这个结构可以非常省内存的去&lt;code&gt;统计各种计数&lt;/code&gt;，比如&lt;code&gt;注册ip数、每日访问IP数、页面实时UV、在线用户数&lt;/code&gt;等。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;这里看到所有的用处都是xxx数，所以这个数据结构的特点就是，可以比较准确的估算出你要统计的数量，但是却无法知道统计的详细内容。比如统计每日访问IP数，可以获取当时访问过的IP总数量，但是没法知道这些IP都是什么。&lt;/p&gt;
+&lt;p&gt;有得必有失，当然你要统计上面提到的那些内容，可以用集合来处理，这样可以知道数量，也能获得所有的详细列表。但是一个大型的网站，每天IP比如有100万个呢，我们粗算一个IP消耗15字节，那么100万个IP就是15M，如果1千万，就是150M。&lt;/p&gt;
+&lt;p&gt;再来看看HyperLogLog，在Redis中每个键占用的内容都是12K，理论存储近似接近2^64个值，不管存储的内容是什么。12K，知道这个数据结构的作用了吧。这也是为什么他&lt;code&gt;不能知道里面的详细内容&lt;/code&gt;了。这是一个基于基数估算的算法，只能比较准确的估算出基数，可以使用少量固定的内存去存储并识别集合中的唯一元素。而且这个估算的基数并不一定准确，是一个带有 0.81% 标准错误（standard error）的近似值。&lt;/p&gt;
+&lt;p&gt;HyperLogLog结构，在范围允许的情况下无论多少值，都只会占用12K内存。&lt;/p&gt;
+&lt;p&gt;这样比如我们把每日IP记录下来，假设每天有一亿个IP访问，如果使用集合的话，一天的内存使用就是1.5G，假设我们存储一个月的记录，就需要45G容量。但是使用HyperLogLog的话，一天12K，一个月360K。如果我们不需要知道IP具体信息的话，完全可以把这些记录留在内存一年、或者不删都行。如果需要，我们也会把所有的IP访问记录通过其他途径存储起来。把每天的信息存储起来，我们可以计算每月IP总数（MERGE），一年的IP总数等（去重）。&lt;/p&gt;
+&lt;p&gt;下面介绍一下HyperLogLog的命令，其实他和集合的命令比较像，只是命令少，不能获取列表而已。另外这个数据结构需要2.8.9及以上的版本才能使用。&lt;/p&gt;
+&lt;p&gt;pfadd&lt;br&gt;
+格式：pfadd key element [element ...]&lt;br&gt;
+说明：将所有元素参数添加到 HyperLogLog 数据结构中&lt;br&gt;
+在执行这个命令之后，HyperLogLog内部的结构会被更新，如果执行完之后HyperLogLog内部的基数估算发生了变化，那么就会返回1，否则（认为已经存在）就返回0。&lt;/p&gt;
+&lt;p&gt;这个命令还可以只有键，没有值，这样就只是创建空的键，不放值。如果这个键存在，不做任何事情，返回0；不存在的话就创建，并返回1。&lt;/p&gt;
+&lt;p&gt;redis&amp;gt; pfadd  ip:20160929  &amp;quot;1.1.1.1&amp;quot;  &amp;quot;2.2.2.2&amp;quot;  &amp;quot;3.3.3.3&amp;quot;&lt;br&gt;
+(integer) 1&lt;br&gt;
+redis&amp;gt; pfadd  ip:20160929 &amp;quot;2.2.2.2&amp;quot;  &amp;quot;4.4.4.4&amp;quot;  &amp;quot;5.5.5.5&amp;quot;  # 存在就只加新的&lt;br&gt;
+(integer) 1&lt;br&gt;
+redis&amp;gt; pfcount  ip:20160929  #元素估计数量没有变化&lt;br&gt;
+(integer) 5&lt;br&gt;
+redis&amp;gt; pfadd  ip:20160929 &amp;quot;2.2.2.2&amp;quot;  # 存在就不会增加&lt;br&gt;
+(integer) 0&lt;br&gt;
+pfcount&lt;br&gt;
+格式：pfcount key [key ...]&lt;br&gt;
+说明：返回给定 HyperLogLog 的基数估算值&lt;br&gt;
+当命令作用于单个键的时候，返回这个键的基数估算值。如果键不存在，则返回0。&lt;br&gt;
+当作用于多个键的时候，返回这些键的并集估算值。类似于把这些键都合并了之后，在调用这个命令输出。&lt;/p&gt;
+&lt;p&gt;这个命令在作用于单个值的时候，时间复杂度为O(1)，并且具有非常低的平均常数时间；在作用于N个值的时候，时间复杂度为O(N)，这个命令的常数复杂度会比较低些。&lt;/p&gt;
+&lt;p&gt;redis&amp;gt; pfadd  ip:20160929  &amp;quot;1.1.1.1&amp;quot;  &amp;quot;2.2.2.2&amp;quot;  &amp;quot;3.3.3.3&amp;quot;&lt;br&gt;
+(integer) 1&lt;br&gt;
+redis&amp;gt; pfcount  ip:20160929&lt;br&gt;
+(integer) 3&lt;br&gt;
+redis&amp;gt; pfadd  ip:20160928  &amp;quot;1.1.1.1&amp;quot;  &amp;quot;4.4.4.4&amp;quot;  &amp;quot;5.5.5.5&amp;quot;&lt;br&gt;
+(integer) 1&lt;br&gt;
+redis&amp;gt; pfcount  ip:20160928  ip:20160929&lt;br&gt;
+(integer) 5&lt;br&gt;
+pfmerge&lt;br&gt;
+格式：pfmerge destkey sourcekey [sourcekey ...]&lt;br&gt;
+说明：将多个HyperLogLog合并为一个HyperLogLog，合并后的HyperLogLog的基数估算值是通过对所有给定HyperLogLog进行并集计算得出的&lt;br&gt;
+这个命令的时间复杂度为O(N)，其中N为要合并的HyperLogLog的个数。不过这个命令的常数时间复杂度比较高。&lt;/p&gt;
+&lt;p&gt;redis&amp;gt; pfadd  ip:20160929  &amp;quot;1.1.1.1&amp;quot;  &amp;quot;2.2.2.2&amp;quot;  &amp;quot;3.3.3.3&amp;quot;&lt;br&gt;
+(integer) 1&lt;br&gt;
+redis&amp;gt; pfadd  ip:20160928  &amp;quot;1.1.1.1&amp;quot;  &amp;quot;4.4.4.4&amp;quot;  &amp;quot;5.5.5.5&amp;quot;&lt;br&gt;
+(integer) 1&lt;br&gt;
+redis&amp;gt; pfmerge ip:201609   ip:20160928   ip:20160929&lt;br&gt;
+OK&lt;br&gt;
+redis&amp;gt; pfcount  ip:201609&lt;br&gt;
+(integer) 5&lt;br&gt;
+关于HLL算法&lt;br&gt;
+数据量一大，统计基数也成了一个麻烦事。进行基数统计时，使用Hyperloglog算法，占用内存小，误差小，实乃不错的方法。&lt;/p&gt;
+&lt;p&gt;算法的论文是《HyperLogLog the analysis of a near-optimal cardinality estimation algorithm》，可以在谷歌学术上下载下来看看，简述下其思想核心。&lt;/p&gt;
+&lt;p&gt;在理想状态下，将一堆数据hash至[0,1]，每两点距离相等，1/间距 即可得出这堆数据的基数。然而实际情况往往不能如愿，只能通过一些修正不断的逼近这个实际的基数。实际采用的方式一是分桶，二是取kmax。分桶将数据分为m组，每组取第k个位置的值，所有组中得到最大的kmax，(k-1)/kmax得到估计的基数。&lt;/p&gt;
+&lt;p&gt;HLL算法的另一个主观上的理解可以用抛硬币的方式来理解。以当硬币抛出反面为一次过程，当你抛n次硬币全为正面的概率为1/2&lt;sup&gt;n。当你经历过k(k很大时)次这样的过程，硬币不出现反面的概率基本为0。假设反面为1，正面为0，每抛一次记录1或者0，当记录上显示为0000000...001时，这种可以归结为小概率事件，基本不会发生。转换到基数的想法就是，可以通过第一个1出现前0的个数n来统计基数，基数大致为2&lt;/sup&gt;(n+1)时。硬币当中可以统计为(1/21+1/42+1/8*3...)，大致可以这么去想。&lt;/p&gt;
+">Redis中的HyperLogLog(基数统计) </a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/redis-geo/"" data-c="
+          &lt;p&gt;Redis 3.2版本之后，新增了对GEO(地理位置)的支持(#1 )，地理位置大概提供了6个命令，分别为：&lt;/p&gt;
+&lt;h1 id=&#34;geoadd&#34;&gt;GEOADD&lt;/h1&gt;
+&lt;p&gt;时间复杂度：每一个元素添加是O(log(N)) ，N是sorted set的元素数量。&lt;/p&gt;
+&lt;p&gt;格式：GEOADD key longitude latitude member [longitude latitude member ...]&lt;br&gt;
+说明：&lt;code&gt;将指定的地理空间位置（纬度、经度、名称）添加到指定的key中&lt;/code&gt;&lt;br&gt;
+返回：添加到sorted set元素的数目，但不包括已更新score的元素&lt;br&gt;
+这些数据将会存储到sorted set。 这样的目的是为了方便使用GEORADIUS或者GEORADIUSBYMEMBER命令对数据进行半径查询等操作。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;该命令以采用标准格式的参数x,y,所以经度必须在纬度之前。这些坐标的限制是可以被编入索引的，区域面积可以很接近极点但是不能索引。具体的限制，由EPSG:900913 / EPSG:3785 / OSGEO:41001 规定如下：&lt;/p&gt;
+&lt;p&gt;有效的经度从-180度到180度&lt;br&gt;
+有效的纬度从-85.05112878度到85.05112878度&lt;br&gt;
+当坐标位置超出上述指定范围时，该命令将会返回一个错误。&lt;/p&gt;
+&lt;p&gt;地球模型&lt;br&gt;
+这只是假设地球是一个球体，因为使用的距离公式是Haversine公式。这个公式仅适用于地球，而不是一个完美的球体。当在社交网站和其他大多数需要查询半径的应用中使用时，这些偏差都不算问题。但是，在最坏的情况下的偏差可能是0.5%，所以一些地理位置很关键的应用还是需要谨慎考虑。&lt;/p&gt;
+&lt;h1 id=&#34;geodist&#34;&gt;GEODIST&lt;/h1&gt;
+&lt;p&gt;时间复杂度：O(log(N))&lt;/p&gt;
+&lt;p&gt;格式： GEODIST key member1 member2 [unit]&lt;br&gt;
+说明：&lt;code&gt;返回两个给定位置之间的距离&lt;/code&gt;&lt;br&gt;
+返回：计算出的距离会以双精度浮点数的形式被返回。 如果给定的位置元素不存在， 那么命令返回空值&lt;br&gt;
+指定单位的参数 unit 必须是以下单位的其中一个：&lt;/p&gt;
+&lt;p&gt;m 表示单位为米&lt;br&gt;
+km 表示单位为千米&lt;br&gt;
+mi 表示单位为英里&lt;br&gt;
+ft 表示单位为英尺&lt;br&gt;
+如果用户没有显式地指定单位参数， 那么GEODIST默认使用米作为单位。GEODIST 命令在计算距离时会假设地球为完美的球形， 在极限情况下， 这一假设最大会造成 0.5% 的误差。&lt;/p&gt;
+&lt;h1 id=&#34;geohash&#34;&gt;GEOHASH&lt;/h1&gt;
+&lt;p&gt;格式：GEOHASH key member [member ...]&lt;br&gt;
+说明：返回一个或多个位置元素的GeoHash(GeoHash算法 #7 )表示&lt;br&gt;
+返回：一个数组，数组的每个项都是一个GeoHash。命令返回的GeoHash的位置与用户给定的位置元素的位置一一对应&lt;br&gt;
+使用表示位置的元素可以使用不同的技术，使用Geohash位置52点整数编码。由于编码和解码过程中所使用的初始最小和最大坐标不同，编码的编码也不同于标准。此命令返回一个标准的Geohash，在维基百科和geohash.org网站都有相关描述。&lt;/p&gt;
+&lt;p&gt;Geohash字符串属性&lt;br&gt;
+该命令将返回11个字符的Geohash字符串，所以没有精度Geohash，损失相比，使用内部52位表示。返回的geohashes具有以下特性：&lt;/p&gt;
+&lt;p&gt;可以缩短从右边的字符。它将失去精度，但仍将指向同一地区&lt;br&gt;
+它可以在 geohash.org 网站使用，网址 http://geohash.org/。查询例子：http://geohash.org/sqdtr74hyu0&lt;br&gt;
+与类似的前缀字符串是附近，但相反的是不正确的，这是可能的，用不同的前缀字符串附近。&lt;/p&gt;
+&lt;h1 id=&#34;geopos&#34;&gt;GEOPOS&lt;/h1&gt;
+&lt;p&gt;格式：GEOPOS key member [member ...]&lt;br&gt;
+说明：&lt;code&gt;从key里返回所有给定位置元素的位置（经度和纬度）&lt;/code&gt;&lt;br&gt;
+返回：GEOPOS 命令返回一个数组，数组中的每个项都由两个元素组成：第一个元素为给定位置元素的经度，而第二个元素则为给定位置元素的纬度；当给定的位置元素不存在时， 对应的数组项为空值。&lt;br&gt;
+给定一个sorted set表示的空间索引，密集使用geoadd命令，它以获得指定成员的坐标。当空间索引填充通过geoadd的坐标转换成一个52位Geohash。&lt;/p&gt;
+&lt;p&gt;因为 GEOPOS 命令接受可变数量的位置元素作为输入， 所以即使用户只给定了一个位置元素， 命令也会返回数组回复。&lt;/p&gt;
+&lt;h1 id=&#34;georadius&#34;&gt;GEORADIUS&lt;/h1&gt;
+&lt;p&gt;格式：GEORADIUS key longitude latitude radius m|km|ft|mi [WITHCOORD] [WITHDIST] [WITHHASH] [COUNT count]&lt;br&gt;
+说明：&lt;code&gt;以给定的经纬度为中心，返回键包含的位置元素当中，与中心的距离不超过给定最大距离的所有位置元素&lt;/code&gt;&lt;br&gt;
+范围可以使用以下其中一个单位：&lt;/p&gt;
+&lt;p&gt;m 表示单位为米&lt;br&gt;
+km 表示单位为千米&lt;br&gt;
+mi 表示单位为英里&lt;br&gt;
+ft 表示单位为英尺&lt;br&gt;
+在给定以下可选项时， 命令会返回额外的信息：&lt;/p&gt;
+&lt;p&gt;WITHDIST: 在返回位置元素的同时，将位置元素与中心之间的距离也一并返回。距离的单位和用户给定的范围单位保持一致。&lt;br&gt;
+WITHCOORD: 将位置元素的经度和维度也一并返回。&lt;br&gt;
+WITHHASH: 以52位有符号整数的形式，返回位置元素经过原始geohash编码的有序集合分值。 这个选项主要用于底层应用或者调试，实际中的作用并不大。&lt;br&gt;
+命令默认返回未排序的位置元素。通过以下两个参数，用户可以指定被返回位置元素的排序方式：&lt;/p&gt;
+&lt;p&gt;ASC: 根据中心的位置， 按照从近到远的方式返回位置元素。&lt;br&gt;
+DESC: 根据中心的位置， 按照从远到近的方式返回位置元素。&lt;br&gt;
+在默认情况下，GEORADIUS命令会返回所有匹配的位置元素。虽然用户可以使用COUNT 选项去获取前 N 个匹配元素，但是因为命令在内部可能会需要对所有被匹配的元素进行处理， 所以在对一个非常大的区域进行搜索时，即使只使用COUNT选项去获取少量元素，命令的执行速度也可能会非常慢。但是从另一方面来说，使用COUNT选项去减少需要返回的元素数量，对于减少带宽来说仍然是非常有用的。&lt;/p&gt;
+&lt;p&gt;返回值&lt;br&gt;
+在没有给定任何WITH选项的情况下，命令只会返回一个像 [“New York”,”Milan”,”Paris”] 这样的线性（linear）列表。&lt;br&gt;
+在指定了WITHCOORD、 WITHDIST、WITHHASH等选项的情况下，命令返回一个二层嵌套数组， 内层的每个子数组就表示一个元素。&lt;br&gt;
+在返回嵌套数组时， 子数组的第一个元素总是位置元素的名字。 至于额外的信息， 则会作为子数组的后续元素， 按照以下顺序被返回：&lt;/p&gt;
+&lt;p&gt;以浮点数格式返回的中心与位置元素之间的距离， 单位与用户指定范围时的单位一致。&lt;br&gt;
+geohash 整数。&lt;br&gt;
+由两个元素组成的坐标，分别为经度和纬度。&lt;br&gt;
+举个例子，GEORADIUS Sicily 15 37 200 km WITHCOORD WITHDIST这样的命令返回的每个子数组都是类似以下格式的：&lt;/p&gt;
+&lt;p&gt;[&amp;quot;Palermo&amp;quot;,&amp;quot;190.4424&amp;quot;,[&amp;quot;13.361389338970184&amp;quot;,&amp;quot;38.115556395496299&amp;quot;]]&lt;/p&gt;
+&lt;h1 id=&#34;georadiusbymember&#34;&gt;GEORADIUSBYMEMBER&lt;/h1&gt;
+&lt;p&gt;格式：GEORADIUSBYMEMBER key member radius m|km|ft|mi [WITHCOORD] [WITHDIST] [WITHHASH] [COUNT count]&lt;br&gt;
+说明：和GEORADIUS命令一样，都可以找出位于指定范围内的元素，但是GEORADIUSBYMEMBER 的中心点是由给定的位置元素决定的，而不是像GEORADIUS那样，使用输入的经度和纬度来决定中心点&lt;/p&gt;
+">Redis GEO(地理位置)</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/bitmap-shi-shi-me/"" data-c="
+          &lt;p&gt;BitMap就是通过一个bit位来表示某个元素对应的值或者状态，其中key就是对应元素本身。在某些特定的应用场景下，使用BitMap非常适合，如：&lt;/p&gt;
+&lt;p&gt;用户签到：统计今天有多少人签到，某人今天是否签到等；&lt;br&gt;
+用户在线状态：有多少人在线，某人是否在线；&lt;br&gt;
+活跃用户统计：一个月来登录次数超过10次的为活跃用户；&lt;br&gt;
+......&lt;br&gt;
+还有很多其它应用场景，使用BitMap的场景大多在于需要记录对象状态（登录、签到、打开、关闭等），这里的对象可以是用户，也可以是其它。总的来说，只要需要记录状态与否，BitMap可能就有用武之地。&lt;/p&gt;
+&lt;p&gt;Redis 中的 BitMap&lt;br&gt;
+Redis从2.2.0开始新增了如下三个与bitmap相关的命令：&lt;/p&gt;
+&lt;p&gt;setbit&lt;br&gt;
+getbit&lt;br&gt;
+bitcount&lt;br&gt;
+在介绍这三个命令之前，先看一个神奇的示例：&lt;/p&gt;
+&lt;p&gt;127.0.0.1:6379&amp;gt; set demo B&lt;br&gt;
+OK&lt;br&gt;
+127.0.0.1:6379&amp;gt; get demo&lt;br&gt;
+&amp;quot;B&amp;quot;&lt;br&gt;
+127.0.0.1:6379&amp;gt; setbit demo 7 1&lt;br&gt;
+(integer) 0&lt;br&gt;
+127.0.0.1:6379&amp;gt; get demo&lt;br&gt;
+&amp;quot;C&amp;quot;&lt;br&gt;
+可以看到，使用了一条setbit demo 7 1命令之后，demo 的值就从B 就变成了 C，这是怎么发生的？&lt;/p&gt;
+&lt;p&gt;setbit&lt;br&gt;
+格式：setbit key offset value&lt;br&gt;
+说明：针对string类型(Redis 数据类型 #1 )，设置或者清空key的value在offset处的bit值(只能只0或者1)：&lt;br&gt;
+当 key 不存在时，自动生成一个新的字符串值。&lt;br&gt;
+字符串会进行伸展(grown)以确保它可以将value保存在指定的偏移量上。当字符串值进行伸展时，空白位置以 0 填充。&lt;br&gt;
+offset 参数必须大于或等于0，小于 2^32 (bit 映射被限制在 512 MB 之内)&lt;br&gt;
+结合上面的示例，我们来对此命令进行解释。首先我们应该知道：&lt;/p&gt;
+&lt;p&gt;字符	十进制	二进制&lt;br&gt;
+B	66	01000010&lt;br&gt;
+C	67	01000011&lt;br&gt;
+再看指令说明，设置value指定offset处的bit值，那么setbit demo 7 1 就是将字符B的第7位设置为1，也就是将01000010的最后一个0设为1。因此值变成了01000011，也就是字符C，这就是字符变化的原因。&lt;/p&gt;
+&lt;p&gt;如何将C变回去，很简单，将第7位变成0即可：&lt;/p&gt;
+&lt;p&gt;127.0.0.1:6379&amp;gt; set demo C&lt;br&gt;
+OK&lt;br&gt;
+127.0.0.1:6379&amp;gt; setbit demo 7 0&lt;br&gt;
+(integer) 1&lt;br&gt;
+127.0.0.1:6379&amp;gt; get demo&lt;br&gt;
+&amp;quot;B&amp;quot;&lt;br&gt;
+事实上，bit的取值也只能是0或1。&lt;/p&gt;
+&lt;p&gt;getbit&lt;br&gt;
+格式：getbit key offset&lt;br&gt;
+说明：对key所储存的字符串值，获取指定偏移量上的位(bit)：&lt;br&gt;
+当 offset 比字符串值的长度大，或者key不存在时，返回 0 。&lt;br&gt;
+弄明白了setbit，getbit就很好理解了：取出字符串指定偏移上的bit：&lt;/p&gt;
+&lt;p&gt;127.0.0.1:6379&amp;gt; set demo B&lt;br&gt;
+OK&lt;br&gt;
+127.0.0.1:6379&amp;gt; getbit demo 6&lt;br&gt;
+(integer) 1&lt;br&gt;
+127.0.0.1:6379&amp;gt; getbit demo 7&lt;br&gt;
+(integer) 0&lt;br&gt;
+字符B的二进制是01000010。&lt;/p&gt;
+&lt;p&gt;bitcount&lt;br&gt;
+格式：bitcount key [start end]&lt;br&gt;
+说明：计算给定字符串中，被设置为1的比特位的数量：&lt;br&gt;
+一般情况下，给定的整个字符串都会被进行计数，通过指定额外的start或end参数，可以让计数只在特定的位上进行。&lt;br&gt;
+start和end参数的设置和GETRANGE命令类似，都可以使用负数值：比如-1表示最后一个字节，-2表示倒数第二个字节，以此类推。&lt;br&gt;
+不存在的key被当成是空字符串来处理，因此对一个不存在的key进行bitcount操作，结果为0。&lt;br&gt;
+127.0.0.1:6379&amp;gt; set demo B&lt;br&gt;
+OK&lt;br&gt;
+127.0.0.1:6379&amp;gt; bitcount demo&lt;br&gt;
+(integer) 2&lt;br&gt;
+补充&lt;br&gt;
+bit的取值只能是0或者1，如果每一位代表一个对象，那么一个key就可以记录2^32个对象的状态，占用空间 2^32bit = 512Mb。&lt;/p&gt;
+&lt;p&gt;除此外，数据库中位图索引的实现(#6 )也与此类似。&lt;/p&gt;
+">Redis BitMap是什么？</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/mybatis-plus-mapperxml-du-qu-cuo-wu/"" data-c="
+          &lt;p&gt;External DTD: Failed to read &lt;code&gt;external DTD&lt;/code&gt; &#39;mbeans-descriptors.dtd&#39;, because &lt;code&gt;&#39;http&#39;&lt;/code&gt; access is not allowed due to restriction set by the accessExternalDTD property.&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;mybatis中dtd配置不允许通过http访问&#34;&gt;&lt;code&gt;Mybatis中dtd配置不允许通过http访问&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;1：新建配置文件jaxp.properties&lt;br&gt;
+在%JAVA_HOME%/jre/lib 目录下新建&lt;code&gt;jaxp.properties&lt;/code&gt;文件，输入如下内容&lt;/p&gt;
+&lt;p&gt;javax.xml.accessExternalSchema=all&lt;br&gt;
+javax.xml.accessExternalDTD=all&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;idea -&amp;gt; setting -&amp;gt; DTD 链接本地文件&lt;br&gt;
+&lt;img src=&#34;https://amoylee49.github.io/post-images/1718486247572.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;springboot-引入子模块-mapperxml-要-classpath&#34;&gt;springboot 引入子模块 mapper.xml   要 &lt;code&gt;classpath*   &lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;element-type-mbeans-descriptors-must-be-declared&#34;&gt;&lt;code&gt;Element type &amp;quot;mbeans-descriptors&amp;quot; must be declared.&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;mapper-locations: &lt;code&gt;路径&lt;/code&gt;要跟包对应&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mybatis-plus:
+#  configuration:
+    # 日志
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:org/blog/**/mapper/*.xml
+  global-config:
+    db-config:
+      # 逻辑删除的字段
+      logic-delete-field: delFlag
+      # 代表已删除的值
+      logic-delete-value: 1
+      # 代表未删除的值
+      logic-not-delete-value: 0
+      # 主键自增策略，以mysql数据库为准
+      id-type: auto
+      table-prefix: sg_ #表前缀
+&lt;/code&gt;&lt;/pre&gt;
+">mybatis plus mapper.xml读取错误 </a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/ming-ling-bi-ji/"" data-c="
+          &lt;pre&gt;&lt;code&gt;docker run -p 8080:8080 -p 50000:50000 --name jenkinss --restart=on-failure \
+-v /usr/local/jenkins/:/var/jenkins_home -d jenkins/jenkins:latest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;########## 国内源直接安装的方法 ##########&lt;br&gt;
+docker run --rm -p 8080:8080 jenkinszh/jenkins-zh:latest&lt;/p&gt;
+&lt;p&gt;mkdir -p /usr/local/jenkins&lt;br&gt;
+chmod -R 777 /usr/local/jenkins&lt;/p&gt;
+&lt;p&gt;docker cp jenkinss:/var/jenkins_home/secrets/ /usr/local/jenkins/secrets&lt;/p&gt;
+&lt;p&gt;chown -R 1000:root /usr/local/jenkins&lt;/p&gt;
+&lt;p&gt;docker run -p 8080:8080 -p 50000:50000 --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk11&lt;/p&gt;
+&lt;p&gt;--privileged=true&lt;br&gt;
+###### jenkins  安装教程 #################&lt;br&gt;
+http://www.noobyard.com/article/p-rcxsaeit-bo.html&lt;/p&gt;
+&lt;p&gt;http://www.noobyard.com/article/p-sfqzxipm-od.html&lt;/p&gt;
+&lt;p&gt;https://blog.csdn.net/zhang493397949/article/details/117146682&lt;/p&gt;
+&lt;p&gt;cp /var/jenkins_home/secrets/initialAdminPassword&lt;/p&gt;
+&lt;p&gt;ConnectionFactoryBuilder&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;     ###############           Egggggggggggggggggggggggggg                     Java8 实践   180页  String +空格 数数字，
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果您想要在 IntelliJ IDEA 的右键菜单中添加自定义功能，可以通过以下步骤实现：&lt;/p&gt;
+&lt;p&gt;打开 IntelliJ IDEA，选择 &amp;quot;File&amp;quot; -&amp;gt; &amp;quot;Settings&amp;quot;。&lt;br&gt;
+在弹出的窗口中，选择 &amp;quot;Menus and Toolbars&amp;quot;。&lt;br&gt;
+在左侧面板中，选择 &amp;quot;Editor Popup Menu&amp;quot;。&lt;br&gt;
+#改 node js 17.9版本&lt;br&gt;
+npm install --global --production windows-build-tools&lt;/p&gt;
+&lt;p&gt;装python 27&lt;/p&gt;
+&lt;p&gt;安装 node gpy&lt;br&gt;
+安装  node-sass&lt;/p&gt;
+&lt;p&gt;再cnpm install&lt;/p&gt;
+&lt;p&gt;Windows 10  #######  设置Python 版本	https://blog.csdn.net/a843334549/article/details/125080106&lt;/p&gt;
+&lt;p&gt;######## 安装Node-gyp  first Look============ https://juejin.cn/post/6968750643238404103&lt;/p&gt;
+&lt;p&gt;npm config set msvs_version 2017&lt;/p&gt;
+&lt;p&gt;https://zwc365.com/2019/10/28/install-node-sass-version-error&lt;/p&gt;
+&lt;p&gt;######Windows10子系统报错：	Cannot connect to the Docker daemon at tcp://0.0.0.0:2375. Is the docker daemon running?&lt;br&gt;
+https://blog.csdn.net/qq_43178297/article/details/88056176&lt;br&gt;
+unset DOCKER_HOST&lt;br&gt;
+unset DOCKER_TLS_VERIFY&lt;br&gt;
+unset DOCKER_TLS_PATH&lt;br&gt;
+docker ps&lt;/p&gt;
+&lt;p&gt;dos2unix my_script.sh&lt;/p&gt;
+&lt;p&gt;########## gradle 搭建   Node js  ##########&lt;br&gt;
+//https://github.com/techprd/kotlin_node_js_seed/blob/develop/build.gradle.kts&lt;br&gt;
+//https://www.kotlincn.net/docs/reference/js-project-setup.html&lt;/p&gt;
+&lt;p&gt;################ spring 实现 自定义注解  ##################&lt;br&gt;
+https://www.cnblogs.com/acode/p/11189833.html&lt;/p&gt;
+&lt;p&gt;查看Linux 命令： 	lscpu 命令  uname -a&lt;/p&gt;
+&lt;p&gt;########### Key Map 地址&lt;br&gt;
+计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout&lt;br&gt;
+Tab和右Shift对调	https://blog.csdn.net/sky_9900/article/details/112256132&lt;/p&gt;
+&lt;h6 id=&#34;mirai-console-插件文档&#34;&gt;mirai-console  #########  插件文档&lt;/h6&gt;
+&lt;p&gt;https://github.com/mamoe/mirai-console/blob/master/docs/Plugins.md&lt;br&gt;
+QQ Bot for CQ WIKI&lt;br&gt;
+Linux&lt;br&gt;
+创建一个文件，后缀为.sh，写入以下内容，添加执行权限，运行&lt;/p&gt;
+&lt;p&gt;chmod +x ./Go-Mirai-Client&lt;/p&gt;
+&lt;p&gt;./Go-Mirai-Client -uin &amp;lt;机器人QQ&amp;gt; -pass &amp;lt;机器人密码&amp;gt; -port &amp;lt;HTTP端口&amp;gt; -device &amp;lt;设备信息位置&amp;gt; -ws_url &amp;lt;消息处理器地址&amp;gt; -sms &amp;lt;是否优先短信登录&amp;gt;&lt;br&gt;
+/login 2664431920 jsan520. IPAD&lt;br&gt;
+########  WS  -http-api-        read.me 文件  ##########&lt;br&gt;
+https://github.com/project-mirai/mirai-api-http/blob/master/docs/adapter/WebsocketAdapter.md&lt;/p&gt;
+&lt;p&gt;bcdedit /set hypervisorlaunchtype off&lt;br&gt;
+bcdedit /set hypervisorlaunchtype auto&lt;/p&gt;
+&lt;p&gt;#######  CentOS 配置虚拟双网卡 https://blog.csdn.net/jasonhwang/article/details/115287437&lt;/p&gt;
+&lt;p&gt;#######  CentOS 配置UFW防火墙  https://www.niuqi360.com/linux/centos-switch-firewalls-from-firewalld-to-ufw/&lt;/p&gt;
+&lt;p&gt;#######  CentOS 安装docker  https://www.likecs.com/show-203584616.html#sc=1100&lt;/p&gt;
+&lt;p&gt;########  Debain 桌面环境  运行  tasksel 命令 ###############&lt;/p&gt;
+&lt;p&gt;sudo ufw allow 5901&lt;/p&gt;
+&lt;p&gt;$ vncserver -kill :1&lt;br&gt;
+$ vncserver :1&lt;/p&gt;
+&lt;p&gt;Debain 安装 VNC viewer  https://support.huaweicloud.com/bestpractice-ecs/zh-cn_topic_0168615364.html&lt;br&gt;
+https://www.myfreax.com/how-to-install-and-configure-vnc-on-debian-10/&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;       Debain 安装 xfce4  桌面环境  update-alternatives --config x-session-manager
+ apt remove
+
+Debain   安装 Wine :           https://www.bilibili.com/read/cv13711395/
+		          https://blog.csdn.net/samsu0108/article/details/121783438
+		          https://forum.ubuntu.org.cn/viewtopic.php?t=72933
+		
+Debain 安装 anbox   https://www.shuzhiduo.com/A/Vx5MDnKaJN/   安卓版本7.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;########### 华为云  centos8 更改epel 源&lt;/p&gt;
+&lt;p&gt;###########  centos7下安装32位wine软件     ########## https://www.dandelioncloud.cn/article/details/1487231334862147586&lt;br&gt;
+####### 官方网址############ https://mirrors.huaweicloud.com/home&lt;/p&gt;
+&lt;p&gt;2.（可选）执行以下命令，备份epel.repo文件。&lt;br&gt;
+mv /etc/yum.repos.d/epel.repo /etc/yum.repos.d/epel.repo.bak&lt;/p&gt;
+&lt;p&gt;如果是CentOS 8或RHEL 8镜像，还需要备份epel-modular.repo文件。&lt;br&gt;
+mv /etc/yum.repos.d/epel-modular.repo /etc/yum.repos.d/epel-modular.repo.bak&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;#######  CentOS 8 / RHEL 8&lt;br&gt;
+wget -qO /etc/yum.repos.d/epel.repo http://mirrors.myhuaweicloud.com/repo/epel-8.repo&lt;br&gt;
+wget -qO /etc/yum.repos.d/epel-modular.repo http://mirrors.myhuaweicloud.com/repo/epel-modular.repo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;4.执行以下命令，生成缓存。&lt;br&gt;
+yum clean metadata&lt;/p&gt;
+&lt;p&gt;yum makecache&lt;/p&gt;
+&lt;p&gt;yum install epel-release -y &amp;gt;/dev/null 2&amp;gt;&amp;amp;1&lt;/p&gt;
+&lt;p&gt;安装可能导致DNS被清空，所以需要先执行下面命令后再按照步骤安装&lt;/p&gt;
+&lt;p&gt;chattr +i /etc/resolv.conf&lt;/p&gt;
+&lt;p&gt;然后安装tigervnc&lt;/p&gt;
+&lt;p&gt;yum install -y tigervnc tigervnc-server&lt;/p&gt;
+&lt;p&gt;####### CentOS-7安装桌面环境 #####   https://blog.csdn.net/litong131219/article/details/103136703&lt;/p&gt;
+&lt;p&gt;yum -y group install &#39;Server with GUI&#39;&lt;br&gt;
+systemctl set-default graphical.target &amp;amp;&amp;amp; reboot&lt;br&gt;
+systemctl get-default&lt;/p&gt;
+&lt;p&gt;cp /mnt/QQHelper_1530.exe /root/Desktop&lt;/p&gt;
+&lt;p&gt;yum -y group install &#39;MATE Desktop&#39;&lt;br&gt;
+#李白互邀&lt;/p&gt;
+&lt;p&gt;1697781682 拐角&lt;br&gt;
+1103312913/1444095074/245242042  也说是也 梦落 三言&lt;/p&gt;
+&lt;p&gt;##艺术字&lt;br&gt;
+Segoe Print   9pt&lt;br&gt;
+Comic Sans MS   9pt&lt;br&gt;
+Calisto MT   9pt&lt;br&gt;
+Sylfaen   9pt&lt;/p&gt;
+&lt;p&gt;##规整&lt;br&gt;
+Times New Roman   9pt&lt;br&gt;
+Trebuchet MS   9pt&lt;br&gt;
+#############  WSL2配置安装KVM&lt;br&gt;
+https://github.com/budtmo/docker-android/&lt;/p&gt;
+&lt;p&gt;https://blog.csdn.net/m0_46161993/article/details/114946221?spm=1001.2101.3001.6661.1&amp;amp;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-114946221-blog-120384449.pc_relevant_paycolumn_v3&amp;amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-114946221-blog-120384449.pc_relevant_paycolumn_v3&amp;amp;utm_relevant_index=1&lt;br&gt;
+https://blog.csdn.net/denglin12315/article/details/120384449&lt;br&gt;
+##########&lt;br&gt;
+配置&lt;br&gt;
+按下Windows + R 键，输入 %UserProfile% 并运行进入用户文件夹&lt;/p&gt;
+&lt;p&gt;新建文件 .wslconfig ，然后记事本编辑&lt;/p&gt;
+&lt;p&gt;[wsl2]&lt;br&gt;
+memory=2GB&lt;br&gt;
+processors=2&lt;br&gt;
+swap=0&lt;br&gt;
+localhostForwarding=true&lt;br&gt;
+memory: 表示最大使用 2GB 内存&lt;br&gt;
+swap: 表示不设置 swap&lt;br&gt;
+localhostForwarding: 默认值为 true。如果 WSL 2 VM 中绑定到通配符或 localhost 的端口应该可以通过 localhost:port 从主机连接。&lt;br&gt;
+processors: 使用的核心数量，默认和你的 Windows 系统使用的核心数一样&lt;/p&gt;
+&lt;p&gt;所以以上我的配置时的是，最大使用内存 2GB、2 个核心、不设置 swap&lt;/p&gt;
+&lt;p&gt;后   设置完成后，运行 wsl --shutdown 即可&lt;br&gt;
+#####################################################&lt;/p&gt;
+&lt;p&gt;docker run --privileged -d -p 6081:6081 -p 55544:55544 -p 55555:55555 -e DEVICE=&amp;quot;Nexus 7&amp;quot; --name android-table2 budtmo/docker-android-x86-11.0:v1.9-p8-rp	&lt;br&gt;
+########## 几个打不开的设置&lt;br&gt;
+VVV ：运行 msconfig&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;powershell 打开组编辑器 gpedit&lt;/li&gt;
+&lt;li&gt;打开设备管理器  devmgmt&lt;/li&gt;
+&lt;li&gt;控制面板 -&amp;gt; 文件历史记录 -&amp;gt;高级设置 -》 事件记录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;进PE，搜索：你的系统盘\Windows\System32目录下“SppExtComObj.exe”，&lt;br&gt;
+删除，重启电脑，弹窗从此bye bye。（此法适合Win10任何预览版，操作后，永无弹窗）&lt;/p&gt;
+&lt;p&gt;########### wsl 启动 [已退出进程，代码为 4294967295] 解决办法&lt;/p&gt;
+&lt;p&gt;解决办法:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;执行 关闭命令&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;dism.exe /online /disable-feature /featurename:Microsoft-Windows-Subsystem-Linux /norestart&lt;br&gt;
+dism.exe /online /disable-feature /featurename:VirtualMachinePlatform /norestart&lt;br&gt;
+2. 重启windows&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;执行 开启命令&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart&lt;br&gt;
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart&lt;br&gt;
+4. 重启 windows&lt;br&gt;
+————————————————&lt;br&gt;
+版权声明：本文为CSDN博主「chenyulancn」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。&lt;br&gt;
+原文链接：https://blog.csdn.net/chenyulancn/article/details/122774288&lt;/p&gt;
+&lt;p&gt;docker network create --subnet=192.168.0.0/20 mynetwork&lt;/p&gt;
+&lt;p&gt;docker run -p 9090:9000 -p 9001:9001 --name minio2 &lt;br&gt;
+-v ~/minio/data:/data &lt;br&gt;
+-e MINIO_ROOT_USER=admin &lt;br&gt;
+-e MINIO_ROOT_PASSWORD=jsan520. &lt;br&gt;
+-d minio/minio server /data --console-address &amp;quot;:9001&amp;quot; --address &amp;quot;:9090&amp;quot;&lt;/p&gt;
+&lt;p&gt;--net mynetwork --ip 192.168.0.5 \&lt;/p&gt;
+&lt;p&gt;docker run --name gmc -d &lt;br&gt;
+-v /root/device:/app/device &lt;br&gt;
+-v /root/plugins:/app/plugins &lt;br&gt;
+-p 9000:9000 --restart=always &lt;br&gt;
+baicailin/gmc&lt;br&gt;
+-p 8081:8081&lt;/p&gt;
+&lt;p&gt;docker run --name pptp2 -d --net=host --privileged -p 1723:1723 &lt;br&gt;
+-v pppt:/etc/ppp/chap-secrets &lt;br&gt;
+-v pppt:/etc/ppp/pptpd-options &lt;br&gt;
+-v pppt:/etc/ppp &lt;br&gt;
+mobtitude/vpn-pptp&lt;/p&gt;
+&lt;p&gt;Add-AppxPackage -Register C:\WSA\WsaPackage_2204.40000.15.0_x64_Release-Nightly\AppxManifest.xml&lt;br&gt;
+Add-AppxPackage -Register D:\WSA\WsaPackage_1.7.32815.0_x64_Release-Nightly\AppxManifest.xml&lt;br&gt;
+Add-AppxPackage C:\Users\JRookie\OneDrive\Desktop\WSAGAScript\Microsoft.UI.Xaml.2.6_2.62112.3002.0_x64__8wekyb3d8bbwe.Appx&lt;br&gt;
+Add-AppxPackage C:\Users\JRookie\OneDrive\Desktop\WSAGAScript\Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe.Appx&lt;br&gt;
+docker run -d --privileged --net=host -v ~/docker-data/ppp55:/etc/ppp mobtitude/vpn-pptp&lt;/p&gt;
+&lt;p&gt;-v 解释： (挂载目录)   ppp目录名：/etc/ppp (容器目录)&lt;br&gt;
+#############  picoworkers.com ##########&lt;br&gt;
+pas ::  Jsan520.@@&lt;br&gt;
+ask me one more question     答案： ask me&lt;/p&gt;
+&lt;p&gt;Edge -&amp;gt; swagbucks.com&lt;br&gt;
+v2ray  -&amp;gt; https://www.kuxs.net/&lt;br&gt;
+################## 第一步  chrome://flags/  #####################&lt;br&gt;
+搜索 sameSite  设置disable&lt;/p&gt;
+&lt;p&gt;由于 Cookie “picoCookieDismiss”的“SameSite”属性设置为“None”&lt;br&gt;
+但缺少“Secure”属性，此 Cookie 未来将被拒绝。若要了解“SameSite“的更多信息，&lt;br&gt;
+请参阅：https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite&lt;/p&gt;
+&lt;p&gt;################## 远程连接电脑 #####################&lt;/p&gt;
+&lt;p&gt;https://blog.csdn.net/Joker00007/article/details/123302837&lt;/p&gt;
+&lt;p&gt;cmd -&amp;gt; net user 查看远程连接账号&lt;br&gt;
+net user Guset password 改密码&lt;/p&gt;
+&lt;h2 id=&#34;多账号登陆&#34;&gt;多账号登陆&lt;/h2&gt;
+&lt;p&gt;https://github.com/stascorp/rdpwrap&lt;/p&gt;
+&lt;p&gt;################## 远程连接电脑 #####################&lt;/p&gt;
+&lt;p&gt;CertUtil -hashfile E:\迅雷下载\macOS-Monterey-12.0.1.dmg MD5&lt;br&gt;
+CertUtil -hashfile E:\ISO\macOS-Monterey-12.3\macOS12.3.dmg MD5&lt;/p&gt;
+&lt;p&gt;#################   下载Sourece Code Pro，&lt;br&gt;
+官网：https://typekit.com/fonts/source-code-pro&lt;/p&gt;
+&lt;p&gt;zsh 主题： crcandy&lt;br&gt;
+###############&lt;/p&gt;
+&lt;p&gt;win运行 输出系统信息&lt;br&gt;
+dxdiag&lt;/p&gt;
+&lt;p&gt;############ 修改 AltTab 缩略图 #################&lt;br&gt;
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer&lt;/p&gt;
+&lt;p&gt;AltTabSettings -》 dword = 1&lt;/p&gt;
+&lt;p&gt;计算机\HKEY_CURRENT_USER\Control Panel\Desktop&lt;br&gt;
+################### BIOS 信息 ####################&lt;br&gt;
+##########  VCUST 替换开机LOGO   ##############&lt;br&gt;
+https://www.intel.cn/content/www/cn/zh/support/articles/000023875/intel-nuc.html&lt;/p&gt;
+&lt;p&gt;VCUSTW64 -BIO=hn0067.bio -LOGO=mifen350.jpg&lt;/p&gt;
+&lt;p&gt;计算机\HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\BIOS&lt;br&gt;
+计算机\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\SystemInformation&lt;br&gt;
+计算机\HKEY_LOCAL_MACHINE\SYSTEM\HardwareConfig\Current&lt;/p&gt;
+&lt;p&gt;Macmini8,1&lt;br&gt;
+1731.100.130.0.0&lt;br&gt;
+02/15/2022&lt;/p&gt;
+&lt;p&gt;Intel® Desktop Board NUC8i7HVB&lt;br&gt;
+HNKBLi70.86A.0067.2021.0528.1339&lt;br&gt;
+############      修复 dockers 重启不了  ###############&lt;br&gt;
+netsh winsock reset&lt;/p&gt;
+&lt;p&gt;############     查看隐藏的适配器  ###############&lt;br&gt;
+Get-NetAdapter -IncludeHidden&lt;/p&gt;
+&lt;p&gt;netsh winsock reset&lt;/p&gt;
+&lt;p&gt;netsh wlan show drivers&lt;/p&gt;
+&lt;p&gt;netsh wlan set hostednetwork mode=allow ssid=本地连接* 9&lt;br&gt;
+本地连接* 10&lt;/p&gt;
+&lt;p&gt;###########   多个地址正在转换NAT&lt;br&gt;
+重置  ipconfig /release&lt;/p&gt;
+&lt;p&gt;重建  ipconfig /renew&lt;br&gt;
+############################ git 命令  #################&lt;br&gt;
+##git 和IDEA命令对比 	http://blog.iis7.com/article/32599.html&lt;/p&gt;
+&lt;h2 id=&#34;git添加远程仓库&#34;&gt;git添加远程仓库&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;    git remote add origin git@github.com:Amoylee49/Spring-Mirai-Server.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;#查看远程地址&lt;br&gt;
+git remote -v&lt;br&gt;
+ssh-keygen -t rsa -C &amp;quot;amoyleeo@qq.com&amp;quot;&lt;br&gt;
+ssh-keygen -t rsa -C &amp;quot;Ebaby1020@live.com&amp;quot;&lt;br&gt;
+在电脑主目录里找到.ssh目录 添加公钥id_rsa.pub&lt;br&gt;
+测试 ssh 连接&lt;br&gt;
+ssh -T git@github.com&lt;/p&gt;
+&lt;p&gt;##IDEA上传项目到github------------ https://www.cnblogs.com/proper128/p/11299264.html&lt;/p&gt;
+&lt;p&gt;##################   git切换分支时，该分支的修改被带到另一个分支    https://blog.csdn.net/weixin_42436131/article/details/100043976&lt;/p&gt;
+&lt;h6 id=&#34;删除commit提交的文件&#34;&gt;删除commit提交的文件&lt;/h6&gt;
+&lt;p&gt;git rm --cached --ignore-unmatch config/Console/*.yml&lt;/p&gt;
+&lt;p&gt;git@github.com:Amoylee49/rabbitmq-test.git  ssh连接&lt;/p&gt;
+&lt;p&gt;git config --global http.sslVerify false   persion denied&lt;/p&gt;
+&lt;p&gt;git config --global user.email &amp;quot;Ebaby1020@live.com&amp;quot;&lt;br&gt;
+//git config --global user.email &amp;quot;Amoyleeo@qq.com&amp;quot;&lt;br&gt;
+//git config --global user.name &amp;quot;Amoylee49&amp;quot;&lt;br&gt;
+//git remote add origin git@github.com:Amoylee49/rabbitmq-test.git&lt;br&gt;
+cp /mnt/d/ubuntuShareFile/jdk-11.0.9_linux-x64_bin.tar.gz /usr/local/jdk&lt;/p&gt;
+&lt;p&gt;生成 ssh key&lt;br&gt;
+ssh-keygen&lt;br&gt;
+ssh-keygen -t rsa -C “Ebaby1020@live.com”&lt;/p&gt;
+&lt;p&gt;git config user.email &amp;quot;Ebaby1020@live.com&amp;quot;&lt;br&gt;
+git config user.email &amp;quot;Amoylee49&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;测试 ssh 连接&lt;br&gt;
+ssh -vT git@github.com -p 443&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;####### win10专业版密钥 #########：W269N-WFGWX-YVC9B-4J6C9-T83GX&lt;/p&gt;
+&lt;p&gt;########## 卸载激活&lt;br&gt;
+slmgr.vbs /upk&lt;/p&gt;
+&lt;p&gt;slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX&lt;br&gt;
+slmgr /ipk N4QG6-KW732-13G43-67M52-T33D8&lt;/p&gt;
+&lt;p&gt;slmgr /skms kms.digiboy.ir  地址问题&lt;br&gt;
+slmgr.vbs /ato&lt;br&gt;
+########### 查看激活状态&lt;br&gt;
+slmgr.vbs -dlv&lt;/p&gt;
+&lt;p&gt;############查看 Window10哪些端口被禁用tcp ###############&lt;br&gt;
+netsh interface ipv4 show excludedportrange protocol=tcp&lt;/p&gt;
+&lt;p&gt;#运行 docker     XXL-Job-admin        #############&lt;br&gt;
+docker run -e PARAMS=&amp;quot;--spring.datasource.url=jdbc:mysql://172.17.0.2:3306/xxl_job?useUnicode=true&amp;amp;characterEncoding=UTF-8&amp;amp;autoReconnect=true&amp;amp;serverTimezone=Asia/Shanghai &lt;br&gt;
+--spring.datasource.username=lzl --spring.datasource.password=root&amp;quot; &lt;br&gt;
+-p 9080:8080 --name xxl-job-admin &lt;br&gt;
+-d xuxueli/xxl-job-admin:2.3.0&lt;/p&gt;
+&lt;p&gt;#运行dockers 蓝灯#############&lt;br&gt;
+docker run -itd --name lantern -p 3128:3128 -p 8080:8080 wilon/lantern&lt;/p&gt;
+&lt;p&gt;#运行dockers V2ray #############&lt;br&gt;
+docker run -d -p 9000:9000 --name v2ray -v v2ray:/etc/v2ray teddysun/v2ray&lt;/p&gt;
+&lt;p&gt;打包 跳过测试&lt;br&gt;
+mvn clean package -Dmaven.test.skip&lt;br&gt;
+执行&lt;br&gt;
+java -jar helloworld-0.0.1-SNAPSHOT.jar&lt;/p&gt;
+&lt;p&gt;#windows 下查看端口&lt;br&gt;
+netstat -aon | findstr 3306&lt;br&gt;
+tasklist|findstr [pid]&lt;/p&gt;
+&lt;p&gt;taskkill -pid 9000 -f&lt;/p&gt;
+&lt;p&gt;#创建MySQL数据库&lt;br&gt;
+docker run --name mysql_test -p 3306:3306 &lt;br&gt;
+-v ~/docker-data/mysql.yml:/var/lib/mysql &lt;br&gt;
+-e MYSQL_DATABASE=springbucks &lt;br&gt;
+-e MYSQL_USER=springbucks &lt;br&gt;
+-e MYSQL_PASSWORD=root &lt;br&gt;
+-e MYSQL_ROOT_PASSWORD=root &lt;br&gt;
+-d mysql&lt;/p&gt;
+&lt;p&gt;#新建一个MySQL 容器&lt;br&gt;
+docker run --name mysql01 &lt;br&gt;
+-v ~/docker-data/mysql.yml:/var/lib/mysql &lt;br&gt;
+-e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql&lt;/p&gt;
+&lt;p&gt;#将数据库切换到mysql库&lt;br&gt;
+use mysql;&lt;/p&gt;
+&lt;p&gt;#添加远程登录用户&lt;br&gt;
+CREATE USER &#39;lzl&#39;@&#39;%&#39; IDENTIFIED WITH mysql_native_password BY &#39;root&#39;;&lt;br&gt;
+GRANT ALL PRIVILEGES ON &lt;em&gt;.&lt;/em&gt; TO &#39;lzl&#39;@&#39;%&#39;;&lt;br&gt;
+FLUSH PRIVILEGES;&lt;/p&gt;
+&lt;p&gt;#提示:&lt;br&gt;
+#开发环境|本地使用: 建议开启root用户远程登陆访问, 生产环境不建议这样做&lt;br&gt;
+ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;123456&#39;;&lt;br&gt;
+alter user &#39;root&#39;@&#39;%&#39; identified with mysql_native_password by &#39;123456&#39;;&lt;br&gt;
+flush privileges;&lt;/p&gt;
+&lt;p&gt;docker run --name mongo -p 27017:27017 -v mongodata:/data/db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root -d mongo&lt;/p&gt;
+&lt;p&gt;docker exec -it mongo bash&lt;/p&gt;
+&lt;p&gt;#先登录mongo&lt;br&gt;
+mongo -uroot -proot&lt;/p&gt;
+&lt;p&gt;db.createUser({user:&amp;quot;springbucks&amp;quot;,pwd:&amp;quot;springbucks&amp;quot;,roles:[{&amp;quot;role&amp;quot;:&amp;quot;readWrite&amp;quot;,&amp;quot;db&amp;quot;:&amp;quot;springbucks&amp;quot;}]});&lt;br&gt;
+db.createUser({user:&amp;quot;test&amp;quot;,pwd:&amp;quot;test&amp;quot;,roles:[{&amp;quot;role&amp;quot;:&amp;quot;dbAdmin&amp;quot;,&amp;quot;db&amp;quot;:&amp;quot;url-shorten-service&amp;quot;}]});&lt;br&gt;
+db.updateRole({&amp;quot;role&amp;quot;:&amp;quot;dbAdmin&amp;quot;,&amp;quot;db&amp;quot;:&amp;quot;url-shorten-service&amp;quot;});&lt;br&gt;
+{ role: &amp;quot;&lt;role&gt;&amp;quot;, db: &amp;quot;&lt;database&gt;&amp;quot; }&lt;br&gt;
+updateRole.updateRole&lt;br&gt;
+###########运行redis&lt;br&gt;
+docker run --name redis -d -p 6379:6379 redis&lt;br&gt;
+#######访问redis 客户端#########&lt;/p&gt;
+&lt;p&gt;docker exec -it redis bash&lt;br&gt;
+redis-cli&lt;/p&gt;
+&lt;p&gt;docker exec -it redis redis-cli&lt;/p&gt;
+&lt;p&gt;cat /etc/hosts查看容器的ip&lt;/p&gt;
+&lt;p&gt;#####创建elasticSearch    ######### 挂载目录 -&amp;gt;  宿主目录：容器目录&lt;br&gt;
+docker pull elasticsearch&lt;/p&gt;
+&lt;p&gt;#####docker  ps -a 查看现有容器  #####&lt;/p&gt;
+&lt;p&gt;mkdir -p /usr/local/elasticsearch/{config,data,logs}&lt;br&gt;
+ll /usr/local/elasticsearch&lt;/p&gt;
+&lt;p&gt;###-v /usr/local/elasticsearch/config:/usr/share/elasticsearch/config &lt;br&gt;
+###-v /usr/local/elasticsearch/data:/usr/share/elasticsearch/data &lt;br&gt;
+###-v /usr/local/elasticsearch/logs:/usr/share/elasticsearch/logs &lt;br&gt;
+###-v /usr/local/elasticsearch/plugins:/usr/share/elasticsearch/plugins &lt;br&gt;
+###-v /mnt/e/dockerdata/elasticsearch/config:/usr/share/elasticsearch/config &lt;br&gt;
+###-v /mnt/e/dockerdata/elasticsearch/data:/usr/share/elasticsearch/data &lt;br&gt;
+###-v /mnt/e/dockerdata/elasticsearch/plugins/:/usr/share/elasticsearch/plugins \&lt;/p&gt;
+&lt;p&gt;docker run --name es_init &lt;br&gt;
+-p 9200:9200 &lt;br&gt;
+-p 9300:9300 &lt;br&gt;
+-e &amp;quot;discovery.type=single-node&amp;quot; &lt;br&gt;
+-e ES_JAVA_OPTS=&amp;quot;-Xms512m -Xmx512m&amp;quot; &lt;br&gt;
+-d elasticsearch:7.9.3&lt;/p&gt;
+&lt;p&gt;docker commit b3c745cc43c7 new_es&lt;/p&gt;
+&lt;p&gt;cd /var/lib/docker/containers/7d50d5e5dd64/&lt;br&gt;
+#######  重新挂载目录######   ##-v 宿主机目录:容器目录&lt;br&gt;
+docker run &lt;br&gt;
+-p 9200:9200 &lt;br&gt;
+-p 9300:9300 &lt;br&gt;
+--name new_elastics &lt;br&gt;
+-v /mnt/e/dockerdata/elasticsearch/config:/usr/share/elasticsearch/config &lt;br&gt;
+-v /mnt/e/dockerdata/elasticsearch/data:/usr/share/elasticsearch/data &lt;br&gt;
+-v /mnt/e/dockerdata/elasticsearch/plugins/:/usr/share/elasticsearch/plugins &lt;br&gt;
+new_es&lt;/p&gt;
+&lt;p&gt;docker run --name elasticsearch &lt;br&gt;
+-p 9200:9200 &lt;br&gt;
+-p 9300:9300 &lt;br&gt;
+-v /mnt/e/dockerdata/elasticsearch/config:/usr/share/elasticsearch/config &lt;br&gt;
+-v /mnt/e/dockerdata/elasticsearch/data:/usr/share/elasticsearch/data &lt;br&gt;
+-v /mnt/e/dockerdata/elasticsearch/plugins/:/usr/share/elasticsearch/plugins \&lt;/p&gt;
+&lt;p&gt;-d elasticsearch:7.9.3 /bin/bash&lt;/p&gt;
+&lt;p&gt;-e &amp;quot;discovery.type=single-node&amp;quot; &lt;br&gt;
+-e ES_JAVA_OPTS=&amp;quot;-Xms512m -Xmx512m&amp;quot; \&lt;/p&gt;
+&lt;p&gt;docker run -it --name elasticsearch1 &lt;br&gt;
+-p 9200:9200 &lt;br&gt;
+-p 9300:9300 &lt;br&gt;
+-v /mnt/e/dockerdata/elasticsearch/config:/usr/share/elasticsearch/config &lt;br&gt;
+-v /mnt/e/dockerdata/elasticsearch/data:/usr/share/elasticsearch/data &lt;br&gt;
+-v /mnt/e/dockerdata/elasticsearch/plugins/:/usr/share/elasticsearch/plugins &lt;br&gt;
+-e &amp;quot;discovery.type=single-node&amp;quot; &lt;br&gt;
+-e ES_JAVA_OPTS=&amp;quot;-Xms512m -Xmx512m&amp;quot; &lt;br&gt;
+elasticsearch:7.9.3 /bin/bash&lt;/p&gt;
+&lt;p&gt;-e &amp;quot;discovery.type=single-node&amp;quot; &lt;br&gt;
+-e ES_JAVA_OPTS=&amp;quot;-Xms512m -Xmx512m&amp;quot; &lt;br&gt;
+-e ES_JAVA_OPTS=&amp;quot;-Des.insecure.allow.root=true&amp;quot; &lt;br&gt;
+--privileged=true &lt;br&gt;
+-d elasticsearch:7.9.3&lt;/p&gt;
+&lt;p&gt;-e &amp;quot;discovery.type=single-node&amp;quot;&lt;br&gt;
+--privileged=true&lt;br&gt;
+-d elasticsearch:7.6.0&lt;/p&gt;
+&lt;p&gt;-v /mnt/e/dockerdata/elasticsearch/config:/usr/share/elasticsearch/config &lt;br&gt;
+-v /mnt/e/dockerdata/elasticsearch/data:/usr/share/elasticsearch/data &lt;br&gt;
+-v /mnt/e/dockerdata/elasticsearch/plugins:/usr/share/elasticsearch/plugins \&lt;/p&gt;
+&lt;p&gt;wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.9.3/elasticsearch-analysis-ik-7.9.3.zip&lt;/p&gt;
+&lt;p&gt;#1. 进入到容器里&lt;br&gt;
+docker exec -it elasticsearch bash&lt;/p&gt;
+&lt;p&gt;#1. 进入到容器里&lt;br&gt;
+docker exec -it elasticsearch bash&lt;/p&gt;
+&lt;p&gt;docker cp 拷贝文件到容器里&lt;br&gt;
+chmod -R 777 plugins&lt;/p&gt;
+&lt;p&gt;#拷贝Ik分词器到dockers 容器中&lt;/p&gt;
+&lt;p&gt;docker cp /usr/local/elasticsearch/elasticsearch-analysis-ik-7.9.3.zip  c9042e029866:/usr/share/elasticsearch/plugins/ik&lt;br&gt;
+docker cp elasticsearch:/usr/share/elasticsearch/data /mnt/e/dockerdata/elasticsearch&lt;br&gt;
+find / -name elasticsearch-analysis-ik-7.9.3.zip&lt;/p&gt;
+&lt;p&gt;bootstrap.system_call_filter : false&lt;br&gt;
+bootstrap.memory_lock: false&lt;br&gt;
+bootstrap.system_call_filter: false&lt;br&gt;
+cluster.initial_master_nodes: [&amp;quot;node-1&amp;quot;]&lt;/p&gt;
+&lt;p&gt;####Docker安装Kibana&lt;br&gt;
+docker run --name kibana &lt;br&gt;
+-p 5601:5601 &lt;br&gt;
+-d kibana:7.9.3&lt;br&gt;
+-v /usr/local/elasticsearch/config:/usr/share/kibana/config \&lt;/p&gt;
+&lt;p&gt;##########查ES IP ？http://localhost:9200/_cat/nodes?v&lt;br&gt;
+server.host: 0.0.0.0&lt;/p&gt;
+&lt;p&gt;mysql -h localhost -uspringbucks -p&lt;/p&gt;
+&lt;p&gt;docker pull zookeeper:3.5&lt;br&gt;
+docker run --name zookeeper -p 2181:2181 -d zookeeper:3.5&lt;/p&gt;
+&lt;p&gt;docker run --name consul -d -p 8500:8500 -p 8600:8600/udp consul&lt;/p&gt;
+&lt;p&gt;docker pull rabbitmq&lt;br&gt;
+docker putll rabbitmq:3.7-management&lt;/p&gt;
+&lt;p&gt;docker run --name rabbitmq-test -d -e RABBITMQ_DEFAULT_USER=root -e RABBITMQ_DEFAULT_PASS=root &lt;br&gt;
+-p 5672:5672 -p 15672:15672 rabbitmq:latest&lt;br&gt;
+Idea&lt;br&gt;
+快速生成返回值方法  c+Alt+V&lt;/p&gt;
+&lt;p&gt;docker ps -a 查看运行容器&lt;br&gt;
+docker images 查看镜像&lt;/p&gt;
+&lt;p&gt;docker restart c..ID 重启服务&lt;/p&gt;
+&lt;p&gt;#======================== Dockerfile  Configuration =========================&lt;br&gt;
+#把下面的Dockerfile内容复制到&amp;quot;Dockerfile-jdk-11.0.8&amp;quot;文件里面,适当修改下内容&lt;br&gt;
+#jdk-11.0.8&lt;br&gt;
+FROM ubuntu:latest&lt;br&gt;
+MAINTAINER  JavaRookie &amp;quot;xxx@qq.com&amp;quot;&lt;br&gt;
+RUN mkdir /usr/local/jdk&lt;br&gt;
+WORKDIR /usr/local/jdk&lt;br&gt;
+ADD jdk-11.0.8_linux-x64_bin.tar.gz /usr/local/jdk&lt;br&gt;
+ENV JAVA_HOME /usr/local/jdk/jdk-11.0.8&lt;br&gt;
+ENV CLASSPATH /usr/local/jdk/jdk-11.0.8/lib&lt;br&gt;
+ENV PATH=&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;J&lt;/mi&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;/msub&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;/&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;:&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;JAVA_HOME/bin:&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.09618em;&#34;&gt;J&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.22222em;&#34;&gt;V&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.32833099999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.08125em;&#34;&gt;H&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.02778em;&#34;&gt;O&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.10903em;&#34;&gt;M&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.05764em;&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;PATH&lt;br&gt;
+#启动容器执行的命令，仅用于验证安装配置是否正确，生产环境使用需注释后再build&lt;br&gt;
+ENTRYPOINT [&amp;quot;java&amp;quot;,&amp;quot;-version&amp;quot;]&lt;br&gt;
+#======================== Dockerfile  Configuration =========================&lt;/p&gt;
+&lt;p&gt;#执行Dockerfile文件，初次依赖镜像的时候会下载相应镜像，创建镜像&lt;br&gt;
+docker build -t jdk-11.0.8:latest -f ./Dockerfile-jdk-11.0.8 .&lt;br&gt;
+#创建容器，检查结果&lt;br&gt;
+docker run -it --name jdk-11 jdk-11.0.8 bash&lt;/p&gt;
+&lt;p&gt;wget https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-64-bit.deb&lt;br&gt;
+dpkg -i lantern-installer-64-bit.deb&lt;br&gt;
+vi ~/.bashrc&lt;/p&gt;
+&lt;h1 id=&#34;在最下面添加一行&#34;&gt;在最下面添加一行：&lt;/h1&gt;
+&lt;p&gt;export DOCKER_HOST=&#39;unix:///var/run/docker.sock&#39;&lt;br&gt;
+source .bashrc&lt;br&gt;
+curl -l http://www.google.com&lt;/p&gt;
+&lt;p&gt;docker network create --subnet=172.18.0.0/16 zookeeper&lt;br&gt;
+docker network create dubbo&lt;br&gt;
+############### zookeeper注册中心 ###################&lt;br&gt;
+docker run -d &lt;br&gt;
+--name zookeeper &lt;br&gt;
+--net zookeeper  --ip 172.18.0.5 &lt;br&gt;
+-v background:/var/lib/zookeeper/data &lt;br&gt;
+-p 2181:2181 &lt;br&gt;
+-p 2888:2888 &lt;br&gt;
+-p 3888:3888 &lt;br&gt;
+jplock/zookeeper:3.4.11&lt;/p&gt;
+&lt;p&gt;#先创建一个--net 连接，再连接另一个&lt;br&gt;
+--net dubbo\ &lt;br&gt;
+docker network connect dubbo zookeeper&lt;/p&gt;
+&lt;p&gt;docker ps -a 查看zookeeper ID&lt;br&gt;
+docker inspect &lt;continerId&gt; 查看zookeeper ID 地址&lt;/p&gt;
+&lt;h1 id=&#34;dubbo-admin管理中心&#34;&gt;############## dubbo-admin管理中心&lt;/h1&gt;
+&lt;p&gt;cd /usr/local/tomcat/webapps/ROOT/WEB-INF&lt;br&gt;
+docker run -d &lt;br&gt;
+--name dubbo-admin &lt;br&gt;
+--net zookeeper &lt;br&gt;
+-v background:/data &lt;br&gt;
+-p 9600:8080 &lt;br&gt;
+-e DUBBO_REGISTRY=&amp;quot;zookeeper://172.18.0.5:2181&amp;quot; &lt;br&gt;
+-e DUBBO_ROOT_PASSWORD=root &lt;br&gt;
+-e DUBBO_GUEST_PASSWORD=guest &lt;br&gt;
+riveryang/dubbo-admin&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;--restart=always \
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;dubbo-monitor监控中心&#34;&gt;dubbo-monitor监控中心&lt;/h1&gt;
+&lt;p&gt;cd /root/dubbo-monitor-simple-2.5.10/conf&lt;/p&gt;
+&lt;p&gt;docker run -d &lt;br&gt;
+--name dubbo-monitor3 &lt;br&gt;
+--net zookeeper &lt;br&gt;
+-e REGISTRY_ADDRESS=&amp;quot;zookeeper://172.18.0.5:2181&amp;quot; &lt;br&gt;
+-e DUBBO_IP_TO_REGISTRY=192.168.0.113 &lt;br&gt;
+-e DUBBO_PORT_TO_REGISTRY=9700 &lt;br&gt;
+-e JETTY_PORT=8082 &lt;br&gt;
+-p 192.168.0.113:9700:9700 &lt;br&gt;
+-p 9601:9601 &lt;br&gt;
+-p 8082:8082 &lt;br&gt;
+ihmhny/dubbo-monitor:2.5.10&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;jeromefromcn/dubbo-monitor
+-p 172.19.0.2:9700:9700 \
+-p 192.168.0.113:9700:9700 \
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;-e REGISTRY_ADDRESS=zookeeper://172.18.0.3:2181&lt;br&gt;
+telnet localhost 2181&lt;/p&gt;
+&lt;p&gt;// %%%%%%%% nacos 注册中心 ￥%%%%%%&lt;br&gt;
+docker pull nacos/nacos-server&lt;/p&gt;
+&lt;p&gt;docker run --name nacos -d -p 8848:8848 &lt;br&gt;
+-e MODE=standalone nacos/nacos-server&lt;/p&gt;
+&lt;p&gt;%%%%%%%%%%% alibaba sentinel  %%%%%%%%%%&lt;/p&gt;
+&lt;p&gt;docker pull bladex/sentinel-dashboard&lt;/p&gt;
+&lt;p&gt;docker run --name sentinel  -d -p 8858:8858 -d  bladex/sentinel-dashboard&lt;/p&gt;
+&lt;p&gt;echo &amp;quot;deb http://mirrors.aliyun.com/debian/ buster main non-free contrib&lt;br&gt;
+deb-src http://mirrors.aliyun.com/debian/ buster main non-free contrib&lt;br&gt;
+deb http://mirrors.aliyun.com/debian-security buster/updates main&lt;br&gt;
+deb-src http://mirrors.aliyun.com/debian-security buster/updates main&lt;br&gt;
+deb http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib&lt;br&gt;
+deb-src http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib&lt;br&gt;
+deb http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib&lt;br&gt;
+deb-src http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib&amp;quot;&amp;gt;sources.list&lt;/p&gt;
+&lt;p&gt;route -p add 172.17.0.0 mask 255.255.240.0 172.29.207.1&lt;/p&gt;
+&lt;p&gt;https://pypi.org/simple/nb-cli/&lt;/p&gt;
+&lt;p&gt;pip install 要安装的包名 -i http://pypi.douban.com/simple --trusted-host pypi.douban.com&lt;/p&gt;
+&lt;p&gt;#例如：&lt;br&gt;
+pip install requests -i http://pypi.douban.com/simple --trusted-host pypi.douban.com&lt;/p&gt;
+&lt;p&gt;pip3 install nb-cli -i https://pypi.org/simple/nb-cli/ --trusted-host pypi.org --root-user-action=ignore&lt;br&gt;
+/home/python/Python-3.11.1.tgzpi&lt;/p&gt;
+&lt;p&gt;rm -rf /usr/bin/python3&lt;br&gt;
+ln -s /usr/local/python3/bin/python3 /usr/bin/python3&lt;br&gt;
+rm -rf /usr/bin/pip3&lt;br&gt;
+ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3&lt;/p&gt;
+&lt;p&gt;yum install epel-release&lt;/p&gt;
+&lt;p&gt;yum install -y python3-pip&lt;/p&gt;
+&lt;p&gt;yum install -y zlib zlib-dev openssl-devel sqlite-devel bzip2-devel libffi libffi-devel gcc gcc-c++&lt;/p&gt;
+&lt;h6 id=&#34;bug安装成功后输入nb提示命令不存在&#34;&gt;Bug:安装成功后输入nb提示命令不存在&lt;/h6&gt;
+&lt;p&gt;https://github.com/nonebot/nb-cli/issues/16&lt;/p&gt;
+&lt;p&gt;cd /usr/local&lt;/p&gt;
+&lt;p&gt;#查看openssl version&lt;br&gt;
+openssl version&lt;/p&gt;
+&lt;p&gt;source ~/.bash_profile&lt;/p&gt;
+&lt;p&gt;python3 -m nb_cli&lt;/p&gt;
+&lt;h4 id=&#34;pip3环境-安装-ssl模块问题&#34;&gt;pip3环境 安装 ssl模块问题&lt;/h4&gt;
+&lt;p&gt;https://blog.csdn.net/whatday/article/details/104745978&lt;/p&gt;
+&lt;h4 id=&#34;卸载-python27-安装-39&#34;&gt;卸载 python2.7 安装 3.9&lt;/h4&gt;
+&lt;p&gt;https://blog.csdn.net/NoamaNelson/article/details/117708164&lt;/p&gt;
+&lt;h5 id=&#34;openssl-升级-1111&#34;&gt;openssl 升级 1.11.1&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;教程：https://cloud.tencent.com/developer/article/1763324
+	https://www.cnblogs.com/yorkyang/p/10132167.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;wget http://www.openssl.org/source/openssl-1.1.1s.tar.gz&lt;/p&gt;
+&lt;p&gt;########## 全部版本的 openssl ----------------  https://www.openssl.org/source/old/&lt;/p&gt;
+&lt;p&gt;tar -zxvf openssl-1.1.1s.tar.gz&lt;/p&gt;
+&lt;p&gt;openssl version -a&lt;/p&gt;
+&lt;p&gt;######## _ssl module 问题&lt;br&gt;
+https://www.sakishum.com/2021/11/27/No-module-named-ssl/&lt;/p&gt;
+&lt;p&gt;########## 全部版本的 python    ------------------  https://www.python.org/downloads/&lt;/p&gt;
+&lt;h6 id=&#34;如何在centos7中完全卸载python3&#34;&gt;如何在centos7中完全卸载Python3&lt;/h6&gt;
+&lt;p&gt;卸载Python3的步骤&lt;br&gt;
+#卸载python3&lt;br&gt;
+rpm -qa|grep python3|xargs rpm -ev --allmatches --nodeps&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#删除所有残余文件
+whereis python3 |xargs rm -frv
+
+#查看现有安装的python，验证是否删除干净
+whereis python 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ls -l /usr/bin/python3      查看安装路径&lt;/p&gt;
+">命令笔记</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/aritcle-links/"" data-c="
+          &lt;p&gt;[TOC]&lt;br&gt;
+&lt;a href=&#34;https://gitee.com/wuxue107/screenshot-api-server/tree/master&#34;&gt;网页截图 和 生成PDF Api服务&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/39262026?sort=created&#34;&gt;Java 中字节流与字符流的区别?&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.ngui.cc/el/1998561.html?action=onClick&#34;&gt;基于 Node.js 环境的 KotlinJs 工程的完美搭建&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://segmentfault.com/a/1190000020142570&#34;&gt;十分钟实现短链接服务（Node + Express + MongoDB）&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_34679704/article/details/120816037&#34;&gt;一致性hash 应用于分布式缓存&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_33355858/article/details/126197647&#34;&gt;SpringBoot中使用Ehcache的详细教程&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.cnblogs.com/acode/p/11189833.html&#34;&gt;Spring Boot实现自定义注解&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.jianshu.com/p/dd47605c420d&#34;&gt;Spring Cloud Gateway（一、路由转发及自定义过滤器）&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/hosaos/article/details/108644527&#34;&gt;MQ-最终一致性之本地消息表、消息事务&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.cnblogs.com/konglxblog/p/16475995.html&#34;&gt;Java8 Stream 精讲 并行流&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/weixin_39545102/article/details/110639683&#34;&gt;hashmap怎么取值_了解面试HashMap数据结构，超详细&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/AJ1101/article/details/79413939&#34;&gt;Jav8 HashMap-源码解释-putVal() 方法分析&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/Asgard_Hu/article/details/128832478&#34;&gt;Gradle多模块开发框架搭建（Springboot）&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gitee.com/crazymaker/SimpleCrayIM/tree/master&#34;&gt;crazyJava Simple-cloud-demo&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://juejin.cn/post/6973874488345624584&#34;&gt;Kotlin JSON Element 序列化&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_40466900/article/details/108146406&#34;&gt;Java 和 Kotlin 的自定义注解，实现代替缓存管理器的操作支持EL注解&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://juejin.cn/post/6844903704680726535&#34;&gt;Kotlin中的IO操作&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/angcyo/article/details/117289422&#34;&gt;Gradle--›Spring Kotlin多模块项目搭建√&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://sinlapis.github.io/2019/12/11/kotlin-puppeteer/&#34;&gt;kotlin+puppeteer写爬虫&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://juejin.cn/post/6844904164728766472&#34;&gt;Puppeteer 爬取豆瓣小组公开信息&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/Josh-Hicks/scraped-tutorials&#34;&gt;puppeteer 爬取youtu 链接&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/Josh-Hicks/scraped-tutorials&#34;&gt;程序猿DD Alibaba Cloud 干货&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/savoygu/blog/&#34;&gt;Node.js项目线上服务器部署与发布&lt;/a&gt;&lt;br&gt;
+【菜鸟学Kubernetes(K8s)系列——（七）关于Kubernetes底层工作原理】(https://blog.csdn.net/ysf15609260848/article/details/126018943)&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/weixin_44179010/article/details/125742488&#34;&gt;RabbitMQ消息队列 顺序消费、消息丢失、重复消费等问题&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://zhuanlan.zhihu.com/p/353609914&#34;&gt;Spring源码——三级缓存解决依赖循环&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://ost.51cto.com/posts/18452&#34;&gt;Spring源码最难问题：当循环依赖遇上Spring AOP&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/majinggogogo/article/details/104455408&#34;&gt;在SpringBoot中怎么注入各种类型（String,List,Map,Object）配置？&lt;/a&gt;&lt;br&gt;
+[百度Uid 分布式IDspringboot 实现]&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/demon7552003/article/details/117191284&#34;&gt;Mockito详细介绍&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.codenong.com/cs107023646/&#34;&gt;Java8函数式编程_9–使用Lambda表达式编写并发程序-vert.x3&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.jianshu.com/p/b4c799b8ae10&#34;&gt;Java8之CompletableFuture&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.jianshu.com/p/68a33b610fac/&#34;&gt;Vert.x 3 核心手册之开头篇&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.jianshu.com/p/f2939ca68df5&#34;&gt;JetCache接入文档&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;学习&#34;&gt;学习&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/fuzhengwei/CodeGuide#1-%E6%BA%90%E7%A0%81&#34;&gt;bugstack.cn 源码学习&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://fhfirehuo.github.io/Attacking-Java-Rookie/&#34;&gt;Java 内容  github.io&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/DogerRain/awesome-programming-resources&#34;&gt;java 面试 leetcode book&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://article.juejin.cn/post/6981424418413084703&#34;&gt;一次鞭辟入里的 Log4j2 异步日志输出阻塞问题的定位&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.w3cschool.cn/mybatis/list/&#34;&gt;MyBatis 教程文章列表 W3C school&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.5axxw.com/wiki/topic/lqjn40&#34;&gt;RabbitMQ 入门教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/menxu_work/article/details/127960953&#34;&gt;Spring Cloud（十二）：Spring Cloud Security&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/coderbruis/JavaSourceCodeLearning&#34;&gt;spring 源码学习&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://juejin.cn/book/6940996508632219689/section/6940996365811974158&#34;&gt;SpringBoot 中间件设计和开发&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://cloud.iocoder.cn/project-intro/#%F0%9F%91%BB-%E5%90%8E%E7%AB%AF%E7%BB%93%E6%9E%84&#34;&gt;芋道文档&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/AobingJava/JavaFamily&#34;&gt;Java面试+Java学习指南】&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;马丁刚果商城&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.macrozheng.com/project/minio_console_start.html&#34;&gt;++ mall 学习教程&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/zhoutaoo/SpringCloud&#34;&gt;++springcloud-gateway等。服务治理方面引入&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/itwanger/toBeBetterJavaer&#34;&gt;一份通俗易懂、风趣幽默的Java学习指南&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;工具网站&#34;&gt;工具网站&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://learngitbranching.js.org/?locale=zh_CN&#34;&gt;git在线学习&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;廖雪峰的官网&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+">Aritcle Links</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/springboot-da-bao-shell-bu-shu-assembly-cha-jian-da-bao/"" data-c="
+          &lt;p&gt;一 引言&lt;br&gt;
+springboot默认以jar包形式，通过java -jar指令运行。而springboot的程序打包，可以分为jar和war两种。&lt;br&gt;
+但这样的启动方式实际上不是很友好，我们常常看到各类组建&lt;code&gt;通过bin目录下的start.sh脚本&lt;/code&gt;进行启动，我们可以在.sh脚本中书写自定义各类启动参数。&lt;br&gt;
+面对一些场景，不希望配置文件conf和第三方依赖包lib放到工程项目的jar文件中；而且为了方便上传到Linux服务器，需要把这些文件压缩成tar.gz、zip等压缩包。面对这种需求，就可以使用Maven的插件---&lt;code&gt;maven-assembly-plugin&lt;/code&gt;和springboot-maven-plugin就可以做到&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;assembly-打包命令&#34;&gt;assembly 打包命令：&lt;/h2&gt;
+&lt;p&gt;mvn clean package assembly:single&lt;br&gt;
+mvn clean compile assembly:single&lt;/p&gt;
+&lt;h2 id=&#34;在pom-引入&#34;&gt;在pom 引入&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;``` 
+&amp;lt;!--  springboot-maven-plugin 插件--&amp;gt;
+&amp;lt;plugin&amp;gt;
+            &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;spring-boot-maven-plugin&amp;lt;/artifactId&amp;gt;
+            &amp;lt;version&amp;gt;3.3.0&amp;lt;/version&amp;gt;
+            &amp;lt;executions&amp;gt;
+                &amp;lt;execution&amp;gt;
+                    &amp;lt;goals&amp;gt;
+                        &amp;lt;goal&amp;gt;repackage&amp;lt;/goal&amp;gt;
+                    &amp;lt;/goals&amp;gt;
+                &amp;lt;/execution&amp;gt;
+            &amp;lt;/executions&amp;gt;
+        &amp;lt;/plugin&amp;gt;
+   &amp;lt;plugin&amp;gt;
+            &amp;lt;artifactId&amp;gt;maven-assembly-plugin&amp;lt;/artifactId&amp;gt;
+            &amp;lt;version&amp;gt;3.1.0&amp;lt;/version&amp;gt;
+            &amp;lt;configuration&amp;gt;
+                &amp;lt;descriptors&amp;gt;
+                    &amp;lt;descriptor&amp;gt;src/main/assembly/assembly.xml&amp;lt;/descriptor&amp;gt;
+                &amp;lt;/descriptors&amp;gt;
+            &amp;lt;/configuration&amp;gt;
+            &amp;lt;executions&amp;gt;
+                &amp;lt;execution&amp;gt;
+                    &amp;lt;id&amp;gt;make-assembly&amp;lt;/id&amp;gt;
+                    &amp;lt;phase&amp;gt;package&amp;lt;/phase&amp;gt;
+                    &amp;lt;goals&amp;gt;
+                        &amp;lt;goal&amp;gt;single&amp;lt;/goal&amp;gt;
+                    &amp;lt;/goals&amp;gt;
+                &amp;lt;/execution&amp;gt;
+            &amp;lt;/executions&amp;gt;
+        &amp;lt;/plugin&amp;gt;
+        ```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后在assembly.xml中对target目录下，需要打包的项目、以及目标文件路径进行一系列的配置。&lt;/p&gt;
+&lt;h2 id=&#34;assemblyxml配置文件&#34;&gt;assembly.xml配置文件&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&amp;lt;assembly&amp;gt;
+    &amp;lt;!-- 可自定义，这里指定的是项目环境。这里的两个参数，都是pom.xml中的参数 --&amp;gt;
+    &amp;lt;!-- spring-boot-assembly-local-1.0.RELEASE.tar.gz  --&amp;gt;
+    &amp;lt;id&amp;gt;${profileActive}-${project.version}&amp;lt;/id&amp;gt;
+ 
+    &amp;lt;!-- 打包的类型，如果有N个，将会打N个类型的包 --&amp;gt;
+    &amp;lt;formats&amp;gt;
+        &amp;lt;format&amp;gt;tar.gz&amp;lt;/format&amp;gt;
+        &amp;lt;format&amp;gt;zip&amp;lt;/format&amp;gt;
+    &amp;lt;/formats&amp;gt;
+ 
+    &amp;lt;includeBaseDirectory&amp;gt;true&amp;lt;/includeBaseDirectory&amp;gt;
+ 
+    &amp;lt;fileSets&amp;gt;
+        &amp;lt;!--
+            0755-&amp;gt;即用户具有读/写/执行权限，组用户和其它用户具有读写权限；
+            0644-&amp;gt;即用户具有读写权限，组用户和其它用户具有只读权限；
+        --&amp;gt;
+ 
+        &amp;lt;!-- 将src/bin目录下的所有文件输出到打包后的bin目录中 --&amp;gt;
+        &amp;lt;fileSet&amp;gt;
+            &amp;lt;directory&amp;gt;${basedir}/src/bin&amp;lt;/directory&amp;gt;
+            &amp;lt;outputDirectory&amp;gt;bin&amp;lt;/outputDirectory&amp;gt;
+            &amp;lt;fileMode&amp;gt;0755&amp;lt;/fileMode&amp;gt;
+            &amp;lt;includes&amp;gt;
+                &amp;lt;include&amp;gt;**.sh&amp;lt;/include&amp;gt;
+                &amp;lt;include&amp;gt;**.bat&amp;lt;/include&amp;gt;
+            &amp;lt;/includes&amp;gt;
+        &amp;lt;/fileSet&amp;gt;
+
+          &amp;lt;!-- 指定输出target/classes中的配置文件到config目录中 --&amp;gt;
+        &amp;lt;fileSet&amp;gt;
+            &amp;lt;directory&amp;gt;${basedir}/target/classes&amp;lt;/directory&amp;gt;
+            &amp;lt;outputDirectory&amp;gt;config&amp;lt;/outputDirectory&amp;gt;
+            &amp;lt;fileMode&amp;gt;0644&amp;lt;/fileMode&amp;gt;
+            &amp;lt;includes&amp;gt;
+                &amp;lt;include&amp;gt;application.yml&amp;lt;/include&amp;gt;
+                &amp;lt;include&amp;gt;application-${profileActive}.yml&amp;lt;/include&amp;gt;
+                &amp;lt;include&amp;gt;mapper/**/*.xml&amp;lt;/include&amp;gt;
+                &amp;lt;include&amp;gt;static/**&amp;lt;/include&amp;gt;
+                &amp;lt;include&amp;gt;templates/**&amp;lt;/include&amp;gt;
+                &amp;lt;include&amp;gt;*.xml&amp;lt;/include&amp;gt;
+                &amp;lt;include&amp;gt;*.properties&amp;lt;/include&amp;gt;
+                &amp;lt;include&amp;gt;*.jks&amp;lt;/include&amp;gt;
+            &amp;lt;/includes&amp;gt;
+        &amp;lt;/fileSet&amp;gt;
+
+         &amp;lt;!-- 将第三方依赖打包到lib目录中 --&amp;gt;
+           &amp;lt;fileSet&amp;gt;
+                ~
+        &amp;lt;/fileSet&amp;gt;
+
+          &amp;lt;!-- 将项目启动jar打包到boot目录中 --&amp;gt;
+           &amp;lt;fileSet&amp;gt;
+                ~
+        &amp;lt;/fileSet&amp;gt;
+&amp;lt;/assembly&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在application.yml中 profile.active指定 &lt;code&gt;profileActive&lt;/code&gt; 参数。&lt;/p&gt;
+&lt;h2 id=&#34;来自-httpswwwcnblogscomlbjboyarticles17970788&#34;&gt;来自 &lt;a href=&#34;https://www.cnblogs.com/LBJboy/articles/17970788&#34;&gt;https://www.cnblogs.com/LBJboy/articles/17970788&lt;/a&gt;&lt;/h2&gt;
+">SpringBoot打包、shell部署、``assembly插件``打包</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/assembly-err/"" data-c="
+          &lt;p&gt;springboot&lt;code&gt;多模块项目mvn打包遇到的问题&lt;/code&gt; - 存在依赖但却无法发现符号&lt;br&gt;
+这是一个什么问题呢？我来阐述一下，问题大致是这么一个情况：&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;我有一个SpringCloud项目，每个微服务都是一个SpringBoot工程，其中有一个payment项目依赖了一个公共的模块common项目。payment项目和common项目都同属一个父工程的子module。&lt;br&gt;
+此时我想要把整合SpringCloud项目部署到服务器上，这时候我就需要打jar包，将jar放到服务器上，通过java -jar *.jar 命令来启动SpringBoot项目&lt;br&gt;
+首先我肯定输入mvn clean install -DskipTests=true将common模块进行打包到本地仓库中&lt;br&gt;
+然后我再对payment项目进行打包mvn clean package -DskipTests=true&lt;br&gt;
+然后mvn命令error （找不到符号），既payment找不到common里的类，所以报错，无法打包&lt;br&gt;
+我分析的理由：&lt;br&gt;
+我一开始是&lt;code&gt;检查&lt;/code&gt;是否父项目的pom漏了module common项目，发现不是，payment和common都是同属一个父项目的子module，而且子项目的&lt;parent&gt;也都一个同一个父项目&lt;br&gt;
+然后我又&lt;code&gt;检查&lt;/code&gt;是否payment依赖的common的路径或版本号出了问题，发现也正确&lt;br&gt;
+然后我就&lt;code&gt;检查&lt;/code&gt;是否.m2的仓库中，包没有打上，或者包不完整。检查后发现也没有&lt;br&gt;
+然后我就&lt;code&gt;怀疑&lt;/code&gt;是否pom.xml的依赖配置问题，但是网上查springboot多模块项目打包不成功的问题，也没有收获&lt;br&gt;
+最后的解决方案：&lt;br&gt;
+该方案是我在某群求助后，一大佬解决的，真的是非常感谢，帮我解决了困扰我一个下午的问题。&lt;/p&gt;
+&lt;p&gt;springboot 多模块项目找不到包 springboot打包后找不到类_spring&lt;/p&gt;
+&lt;p&gt;我的&lt;code&gt;问题&lt;/code&gt;就是在common项目的&lt;code&gt;pom&lt;/code&gt;导入了&lt;code&gt;spring-boot-maven-plugin插件&lt;/code&gt;，导致打的common jar包与平时的jar包不同。当该jar包被其他模块依赖，就会出现该jar无法被其他模块访问到。&lt;/p&gt;
+&lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;p&gt;所以如果你的项目Module&lt;code&gt;仅仅是作为&lt;/code&gt;jar包依赖使用的，而不是一个SpringBoot&lt;code&gt;启动项工程&lt;/code&gt;就千万不要把spring-boot-maven-plugin插件配置到该项目的pom中。导入了该插件所打的jar包和没有该插件时所打的jar包是不同的。谨记&lt;/p&gt;
+">springboot 多模块项目找不到包 springboot打包后找不到类</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
+&lt;h2 id=&#34;兴趣爱好&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;
+&lt;h2 id=&#34;联系我呀&#34;&gt;📬 联系我呀&lt;/h2&gt;
+">关于</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://amoylee49.github.io/post/hello-gridea/"" data-c="
+          &lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
+✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/getgridea/gridea&#34;&gt;Github&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gridea.dev/&#34;&gt;Gridea 主页&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://fehey.com/&#34;&gt;示例网站&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;特性&#34;&gt;特性👇&lt;/h2&gt;
+&lt;p&gt;📝  你可以使用最酷的 &lt;strong&gt;Markdown&lt;/strong&gt; 语法，进行快速创作&lt;/p&gt;
+&lt;p&gt;🌉  你可以给文章配上&lt;code&gt;精美的&lt;/code&gt;封面图和在文章任意位置插入图片&lt;/p&gt;
+&lt;p&gt;🏷️  你可以对文章进行标签分组&lt;/p&gt;
+&lt;p&gt;📋  你可以自定义菜单，甚至可以创建外部链接菜单&lt;/p&gt;
+&lt;p&gt;💻  你可以在 &lt;strong&gt;Windows&lt;/strong&gt;，&lt;strong&gt;MacOS&lt;/strong&gt; 或 &lt;strong&gt;Linux&lt;/strong&gt; 设备上使用此客户端&lt;/p&gt;
+&lt;p&gt;🌎  你可以使用 &lt;strong&gt;𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌&lt;/strong&gt; 或 &lt;strong&gt;Coding Pages&lt;/strong&gt; 向世界展示，未来将支持更多平台&lt;/p&gt;
+&lt;p&gt;💬  你可以进行简单的配置，接入 &lt;a href=&#34;https://github.com/gitalk/gitalk&#34;&gt;Gitalk&lt;/a&gt; 或 &lt;a href=&#34;https://github.com/SukkaW/DisqusJS&#34;&gt;DisqusJS&lt;/a&gt; 评论系统&lt;/p&gt;
+&lt;p&gt;🇬🇧  你可以使用&lt;strong&gt;中文简体&lt;/strong&gt;或&lt;strong&gt;英语&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力&lt;/p&gt;
+&lt;p&gt;🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步&lt;/p&gt;
+&lt;p&gt;🌱 当然 &lt;strong&gt;Gridea&lt;/strong&gt; 还很年轻，有很多不足，但请相信，它会不停向前 🏃&lt;/p&gt;
+&lt;p&gt;未来，它一定会成为你离不开的伙伴&lt;/p&gt;
+&lt;p&gt;尽情发挥你的才华吧！&lt;/p&gt;
+&lt;p&gt;😘 Enjoy~&lt;/p&gt;
+">Hello Gridea</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 200
+  });
+</script>
+
+
+<script src="/media/js/mouse/love.js"></script>
+
+
+</html>

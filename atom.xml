@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://amoylee49.github.io</id>
+    <title>October</title>
+    <updated>2024-06-28T22:21:17.247Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://amoylee49.github.io"/>
+    <link rel="self" href="https://amoylee49.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://amoylee49.github.io/images/avatar.png</logo>
+    <icon>https://amoylee49.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, October</rights>
+    <entry>
+        <title type="html"><![CDATA[小米rom 刷 migsk]]></title>
+        <id>https://amoylee49.github.io/post/xiaomi--migsk/</id>
+        <link href="https://amoylee49.github.io/post/xiaomi--migsk/">
+        </link>
+        <updated>2024-06-28T13:38:22.000Z</updated>
+        <summary type="html"><![CDATA[<p>rom 下载地址：xiaomirom.com</p>
+<h1 id="magisk安装">magisk安装</h1>
+]]></summary>
+        <content type="html"><![CDATA[<p>rom 下载地址：xiaomirom.com</p>
+<h1 id="magisk安装">magisk安装</h1>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[mysql web UI 客户端（docker）]]></title>
+        <id>https://amoylee49.github.io/post/mysql-web-ui-ke-hu-duan-docker/</id>
+        <link href="https://amoylee49.github.io/post/mysql-web-ui-ke-hu-duan-docker/">
+        </link>
+        <updated>2024-06-25T17:26:56.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java面试题：]]></title>
+        <id>https://amoylee49.github.io/post/java-interview/</id>
+        <link href="https://amoylee49.github.io/post/java-interview/">
+        </link>
+        <updated>2024-06-18T03:34:14.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="java类加载过程">Java类加载过程？</h1>
+<figure data-type="image" tabindex="1"><img src="https://amoylee49.github.io/post-images/1718681793146.png" alt="" loading="lazy"></figure>
+<h1 id="描述一下jvm加载class文件的原理机制">描述一下JVM加载class文件的原理机制?</h1>
+<ol>
+<li>装载： 查找和导入class文件；</li>
+<li>连接：<br>
+① 检查:检查载入的class文件数据的正确性;<br>
+② 准备:为类的静态变量分配存储空间;<br>
+③ 解析:将符号引用转换成直接引用(这一步是可选的)</li>
+<li>初始化： 静态变量，静态代码块。<br>
+这样的过程在程序调用类的静态成员的时候开始执行，所以静态方法main()才会成为一般程序的入口 方法。类的构造器也会引发该动作。</li>
+</ol>
+]]></summary>
+        <content type="html"><![CDATA[<h1 id="java类加载过程">Java类加载过程？</h1>
+<figure data-type="image" tabindex="1"><img src="https://amoylee49.github.io/post-images/1718681793146.png" alt="" loading="lazy"></figure>
+<h1 id="描述一下jvm加载class文件的原理机制">描述一下JVM加载class文件的原理机制?</h1>
+<ol>
+<li>装载： 查找和导入class文件；</li>
+<li>连接：<br>
+① 检查:检查载入的class文件数据的正确性;<br>
+② 准备:为类的静态变量分配存储空间;<br>
+③ 解析:将符号引用转换成直接引用(这一步是可选的)</li>
+<li>初始化： 静态变量，静态代码块。<br>
+这样的过程在程序调用类的静态成员的时候开始执行，所以静态方法main()才会成为一般程序的入口 方法。类的构造器也会引发该动作。</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mysql 三范式3]]></title>
+        <id>https://amoylee49.github.io/post/mysql-fanshi/</id>
+        <link href="https://amoylee49.github.io/post/mysql-fanshi/">
+        </link>
+        <updated>2024-06-17T20:20:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>第一范式(1NF)：属性不可分割，即每个属性都是不可分割的原子项。(实体的属性即表中的列)</p>
+<p>第二范式(2NF)：满足第一范式；且不存在部分依赖，即非主属性必须完全依赖于主属性。(主属性即主键；完全依赖是针对于联合主键的情况，非主键列不能只依赖于主键的一部分)</p>
+<p>第三范式(3NF)：满足第二范式；且不存在传递依赖，即非主属性不能与非主属性之间有依赖关系，非主属性必须直接依赖于主属性，不能间接依赖主属性。（A -&gt; B, B -&gt;C, A -&gt; C）</p>
+<p>适度的增加<code>冗余字段</code>能够提升查询速度，简化操作，因为不用每次都使用联接查询，获取属性。但是使用冗余字段<code>违反了</code>数据库第三范式的设计原则，需要根据业务设计冗余字段。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>第一范式(1NF)：属性不可分割，即每个属性都是不可分割的原子项。(实体的属性即表中的列)</p>
+<p>第二范式(2NF)：满足第一范式；且不存在部分依赖，即非主属性必须完全依赖于主属性。(主属性即主键；完全依赖是针对于联合主键的情况，非主键列不能只依赖于主键的一部分)</p>
+<p>第三范式(3NF)：满足第二范式；且不存在传递依赖，即非主属性不能与非主属性之间有依赖关系，非主属性必须直接依赖于主属性，不能间接依赖主属性。（A -&gt; B, B -&gt;C, A -&gt; C）</p>
+<p>适度的增加<code>冗余字段</code>能够提升查询速度，简化操作，因为不用每次都使用联接查询，获取属性。但是使用冗余字段<code>违反了</code>数据库第三范式的设计原则，需要根据业务设计冗余字段。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Redis 分布式锁]]></title>
+        <id>https://amoylee49.github.io/post/redis-fen-bu-shi-suo/</id>
+        <link href="https://amoylee49.github.io/post/redis-fen-bu-shi-suo/">
+        </link>
+        <updated>2024-06-17T03:00:19.000Z</updated>
+        <summary type="html"><![CDATA[<p>set 命令实现：redis的 <code>set命令</code>支持在获取锁的同时设置key的<code>过期</code>时间 等同于（setnx+expire）</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>set 命令实现：redis的 <code>set命令</code>支持在获取锁的同时设置key的<code>过期</code>时间 等同于（setnx+expire）</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Redis]]></title>
+        <id>https://amoylee49.github.io/post/redis/</id>
+        <link href="https://amoylee49.github.io/post/redis/">
+        </link>
+        <updated>2024-06-17T02:12:53.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="mysql-里有-2000w-数据redis-中只存-20w-的数据如何保证-redis-中的数据都是热点数据">MySQL 里有 2000w 数据，redis 中只存 20w 的数据，如何保证 redis 中的数据都是热点数据</h3>
+<p>Redis 内存数据集大小上升到一定大小的时候，就会施行6 种<code>数据淘汰策略</code>(ttl, lru random)。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h3 id="mysql-里有-2000w-数据redis-中只存-20w-的数据如何保证-redis-中的数据都是热点数据">MySQL 里有 2000w 数据，redis 中只存 20w 的数据，如何保证 redis 中的数据都是热点数据</h3>
+<p>Redis 内存数据集大小上升到一定大小的时候，就会施行6 种<code>数据淘汰策略</code>(ttl, lru random)。</p>
+]]></content>
+    </entry>
+</feed>
